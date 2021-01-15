@@ -1,0 +1,96 @@
+.landing-page{
+  background-image: url(../assets/images/main-banner-1.png);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  // .main-background{
+  //   position: fixed;
+  //   top: 0;
+  //   left: 70px;
+  //   right: 0;
+  //   bottom: 0;
+  //   max-width: calc(100vw - 70px);
+  //   height: 100vh;
+  //   z-index: -1;
+  // }
+  .bmh-banner{
+    background: $bridal-health;
+    border: 2px solid $swamp;
+    border-left: 12px solid $swamp;
+    display: inline-flex;
+    padding: 20px;
+    max-width: 550px;
+    position: relative;
+    >img{
+      margin-right: 15px;
+      max-width: 220px;
+    }
+    &-content{
+      h3{
+        color: $dallas;
+        font-size: 20px;
+        line-height: 1;
+        font-weight: $bold;
+      }
+      p{
+        font-size: 12px;
+        color: $dusty-grey;
+      }
+    }
+    .btn-view-project{
+      position: absolute;
+      left: calc(100% + 2px);
+      bottom: 0;
+      white-space: nowrap;
+      background-color: $java;
+      border-radius: 0;
+      color: white;
+      img{
+        margin-left: 5px;
+        margin-right: 0;
+      }
+    }
+    .location{
+      font-size: 12px;
+      color: $dusty-grey;
+      img{
+        max-width: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .bmh-projects{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $swamp;
+    padding: 20px;
+    .project{
+      display: flex;
+      width: 33.33%;
+      img{
+        max-width: 95px;
+        height: 45px;
+        margin-right: 15px;
+      }
+      &-content{
+        max-width: calc(100% - 110px);
+        h3{
+          font-size: 18px;
+          color: $dusty-grey;
+          padding-bottom: 5px;
+          border-bottom: 1px solid rgba(white,.6);
+        }
+        p{
+          font-size: 11px;
+          color: $dusty-grey;
+          max-height: 13px;
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

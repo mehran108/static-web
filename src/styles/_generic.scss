@@ -1,0 +1,24 @@
+//Reset style
+label{
+  margin-bottom: 0;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+body{
+  position: relative;
+  font-family: $primary-font;
+  padding-left: 70px;
+  font-size: 14px;
+  line-height: 1.25;
+}
+.btn{
+  padding: 10px;
+  border-radius: 0;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: $normal;
+}
