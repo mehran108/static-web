@@ -3,6 +3,8 @@
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
   // .main-background{
   //   position: fixed;
   //   top: 0;
@@ -21,6 +23,8 @@
     padding: 20px;
     max-width: 550px;
     position: relative;
+    margin-left: 50px;
+    margin-bottom: 10px;
     >img{
       margin-right: 15px;
       max-width: 220px;
@@ -64,6 +68,7 @@
     flex-wrap: wrap;
     background-color: $swamp;
     padding: 20px;
+    margin: 20px;
     .project{
       display: flex;
       width: 33.33%;
@@ -92,5 +97,8 @@
         }
       }
     }
+  }
+  main{
+    margin-top: auto;
   }
 }
