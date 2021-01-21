@@ -10,6 +10,9 @@ import { DealershipComponent } from 'src/components/dealership/dealership.compon
 import { LifestyleComponent } from 'src/components/lifestyle/lifestyle.component';
 import { ProjectOverviewComponent } from 'src/components/project-overview/project-overview.component';
 import { ServiceComponent } from 'src/components/service/service.component';
+import { HeaderComponent } from 'src/components/header/header.component';
+import { HomeComponent } from 'src/components/home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { ServiceComponent } from 'src/components/service/service.component';
     DealershipComponent,
     LifestyleComponent,
     ProjectOverviewComponent,
-    ServiceComponent
+    ServiceComponent,
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

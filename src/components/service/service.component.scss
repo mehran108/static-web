@@ -1,0 +1,62 @@
+//service detail
+#services-details {
+	background-color: #ebebeb;
+	padding-top: 80px;
+	h2 {
+		color: #073f3f;
+		margin-bottom: 100px;
+		position: relative;
+		display: inline-block;
+		@media (min-width: 768px) {
+			&:before,
+			&:after {
+				content: "";
+				background-repeat: no-repeat;
+				position: absolute;
+				width: 140px;
+				height: 12px;
+				top: 50%;
+			}
+			&:before {
+				left: -160px;
+				background-image: url('../../assets/images/service/left-arrow.png');
+			}
+			&:after {
+				right: -160px;
+				background-image: url('../../assets/images/service/right-arrow.png');
+			}
+		}
+	}
+}
+
+//service info
+.service-info {
+	background-color: #073f3f;
+	border-radius: 10px;
+	text-align: center;
+	color: #fff;
+	padding: 100px 50px 40px;
+	position: relative;
+	margin-bottom: 100px;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+	img {
+		position: absolute;
+		top: -70px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	h4 {
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+		font-size: 30px;
+		padding-bottom: 25px;
+		max-width: 195px;
+		margin: 0 auto;
+	}
+	p {
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 16px;
+	}
+}
