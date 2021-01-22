@@ -3,7 +3,6 @@
 }
 .threeSixty-wrapper{
     display: block;
-    position: relative;
     height: 100vh;
     width: 100%;
 }
@@ -263,50 +262,3 @@ h2 {
     }
 }
 
-//project gallery
-.gallery_wrapper {
-    background-color: #f2f2f2;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    .slick-wrapper {
-        width: 100%;
-    }
-    #slick1 {
-        .slick-prev {
-            left: 35%;
-            top: inherit;
-            bottom: -18%;
-            @media (min-width: 992px) {
-                left: 45%;
-            }
-            &:before {
-                background-image: url('../../assets/images/project/gallery-left-arrow.png');
-            }
-        }
-        .slick-next {
-            top: inherit;
-            right: 35%;
-            bottom: -18%;
-            @media (min-width: 992px) {
-                right: 45%;
-            }
-            &:before {
-                background-image: url('../../assets/images/project/gallery-right-arrow.png');
-            }
-        }
-        .slick-prev,
-        .slick-next {
-            width: 50px;
-            height: 50px;
-            z-index: 9;
-        }
-        .slick-prev:before,
-        .slick-next:before {
-            font-size: 40px;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: transparent;
-            opacity: 1;
-        }
-    }
-}

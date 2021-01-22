@@ -90,10 +90,15 @@ class Carousel {
   }
 
   // Construct the carousel controls
+
   setControls() {
+    let galleryControlsContainer = document.querySelector('.gallery-controls');
+    debugger;
     this.carouselControls.forEach(control => {
-      galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
-    }); 
+      if(galleryControlsContainer){
+        galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
+      }
+    });
 
     !!galleryControlsContainer.childNodes[0] ? galleryControlsContainer.childNodes[0].innerHTML = this.carouselControls[0] : null;
     !!galleryControlsContainer.childNodes[1] ? galleryControlsContainer.childNodes[1].innerHTML = this.carouselControls[1] : null;
