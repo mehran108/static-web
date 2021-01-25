@@ -93,7 +93,6 @@ class Carousel {
 
   setControls() {
     let galleryControlsContainer = document.querySelector('.gallery-controls');
-    debugger;
     this.carouselControls.forEach(control => {
       if(galleryControlsContainer){
         galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;

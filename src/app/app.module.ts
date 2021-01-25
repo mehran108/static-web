@@ -12,6 +12,8 @@ import { ProjectOverviewComponent } from 'src/components/project-overview/projec
 import { ServiceComponent } from 'src/components/service/service.component';
 import { HeaderComponent } from 'src/components/header/header.component';
 import { HomeComponent } from 'src/components/home/home.component';
+import { ProjectAlraziqComponent } from 'src/components/project-alraziq/project-alraziq.component';
+import { ProjectUpcomingComponent } from 'src/components/project-upcoming/project-upcoming.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { HomeComponent } from 'src/components/home/home.component';
     ProjectOverviewComponent,
     ServiceComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectAlraziqComponent,
+    ProjectUpcomingComponent
   ],
   imports: [
     BrowserModule,
