@@ -552,6 +552,18 @@ h2.contact_title {
   outline: none;
 }
 
+html.a-fullscreen{
+  position: relative !important;
+  .threeSixty-wrapper{
+    height: 80vh;
+  }
+  .a-canvas{
+    position: relative !important;
+  }
+  body{
+    overflow: visible !important;
+  }
+}
 
 //360 viewer
 #pano {

@@ -2,7 +2,6 @@
 import { Component, ChangeDetectionStrategy, OnInit, OnDestroy, ChangeDetectorRef, HostListener } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import * as THREE from 'three';
 @Component({
   selector: 'app-panorama-image-renderer',
   templateUrl: './panorama-image-renderer.component.html',

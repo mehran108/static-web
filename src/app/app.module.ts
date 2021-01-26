@@ -3,7 +3,6 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ThreeSixtyModule } from '@mediaman/angular-three-sixty';
 import { AboutComponent } from 'src/components/about/about.component';
 import { ContactComponent } from 'src/components/contact/contact.component';
 import { DealershipComponent } from 'src/components/dealership/dealership.component';
@@ -30,8 +29,7 @@ import { PanoramaImageRendererComponent } from 'src/components/project-overview/
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    ThreeSixtyModule
+    AppRoutingModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
