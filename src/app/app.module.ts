@@ -14,6 +14,7 @@ import { HeaderComponent } from 'src/components/header/header.component';
 import { HomeComponent } from 'src/components/home/home.component';
 import { ProjectAlraziqComponent } from 'src/components/project-alraziq/project-alraziq.component';
 import { ProjectUpcomingComponent } from 'src/components/project-upcoming/project-upcoming.component';
+import { LightboxModule } from 'ngx-lightbox';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ProjectUpcomingComponent } from 'src/components/project-upcoming/projec
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ThreeSixtyModule
+    ThreeSixtyModule,
+    LightboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

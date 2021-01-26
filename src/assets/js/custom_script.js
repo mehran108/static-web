@@ -32,8 +32,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    responsive: [
-    {
+    responsive: [{
       breakpoint: 768,
       settings: {
         arrows: false,
@@ -41,8 +40,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1
       }
-    },
-  ]
+    }, ]
   });
 
   $('#slick1').slick({
@@ -69,9 +67,13 @@ $(document).ready(function () {
       },
     ]
   });
-
-
 });
+
+// Initiate Lightbox
+// $(function () {
+//   $('.gallery1 a').lightbox();
+// });
+
 //header-overlay
 $(document).click(function () {
   if (($(".wrapper").hasClass("active")) && ($(".overlay").hasClass("active"))) {
@@ -91,10 +93,13 @@ $(window).load(function () {
   });
 
   //mapbox js
-  mapboxgl.accessToken = 'pk.eyJ1IjoibXVoYW1tYWQta2hpemFyIiwiYSI6ImNrNGw2cTR0cTF4N28zZXF3cW1lYnEzdTYifQ.7ZTNdPtctprKL33po_OAjQ';
-  var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11'
-  });
+  // mapboxgl.accessToken = 'pk.eyJ1IjoibXVoYW1tYWQta2hpemFyIiwiYSI6ImNrNGw2cTR0cTF4N28zZXF3cW1lYnEzdTYifQ.7ZTNdPtctprKL33po_OAjQ';
+  // var map = new mapboxgl.Map({
+  //   container: 'map',
+  //   style: 'mapbox://styles/mapbox/streets-v11'
+  // });
   //mapbox js
 }); //window load
+
+
+
