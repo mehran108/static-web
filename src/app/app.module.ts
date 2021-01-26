@@ -13,6 +13,7 @@ import { ServiceComponent } from 'src/components/service/service.component';
 import { HeaderComponent } from 'src/components/header/header.component';
 import { HomeComponent } from 'src/components/home/home.component';
 import { PanoramaImageRendererComponent } from 'src/components/project-overview/panorama-image-renderer/panorama-image-renderer.component';
+import { NgxCaptchaModule } from 'ngx-captcha';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { PanoramaImageRendererComponent } from 'src/components/project-overview/
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ThreeSixtyModule
+    ThreeSixtyModule,
+    NgxCaptchaModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
