@@ -1,6 +1,7 @@
 <!--Mian Content-->
 <div id="project_main">
   <div class="threeSixty-wrapper">
+
     <body class="multiple-scenes view-control-buttons">
       <app-panorama-image-renderer></app-panorama-image-renderer>
       <!-- <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
@@ -321,6 +322,9 @@
             placeholder="Message"></textarea>
         </div>
         <div class="col-md-3">
+          <ngx-recaptcha2 #captchaElem [siteKey]="siteKey" [useGlobalDomain]="false" size="normal" hl="en" theme="light"
+          type="image" class="captcha">
+        </ngx-recaptcha2>
           <button class="btn btn-primary" type="submit">Submit</button>
           <button class="btn btn-secondary">Download Profile</button>
         </div>

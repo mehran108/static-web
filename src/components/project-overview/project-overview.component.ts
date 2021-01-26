@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { ReCaptcha2Component } from 'ngx-captcha';
 
 @Component({
   selector: 'app-project-overview',
@@ -6,6 +7,12 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
   styleUrls: ['./project-overview.component.scss']
 })
 export class ProjectOverviewComponent implements OnInit, AfterViewInit {
+  siteKey = '6Ld0NJoUAAAAABxvzEFKiouFUniWfYC8uIUfBeGT';
+  public type = 'v3';
+  public lang = 'en';
+  public theme = 'light';
+  public size = 'normal';
+
   ngOnInit() {
 
   }
