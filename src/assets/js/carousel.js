@@ -86,7 +86,7 @@ class Carousel {
     this.carouselArray.forEach(item => {
       const nav = galleryContainer.lastElementChild;
       nav.appendChild(document.createElement('li'));
-    }); 
+    });
   }
 
   // Construct the carousel controls
@@ -98,11 +98,13 @@ class Carousel {
         galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
       }
     });
+    if (galleryControlsContainer) {
+      !!galleryControlsContainer.childNodes[0] ? galleryControlsContainer.childNodes[0].innerHTML = this.carouselControls[0] : null;
+      !!galleryControlsContainer.childNodes[1] ? galleryControlsContainer.childNodes[1].innerHTML = this.carouselControls[1] : null;
+    }
 
-    !!galleryControlsContainer.childNodes[0] ? galleryControlsContainer.childNodes[0].innerHTML = this.carouselControls[0] : null;
-    !!galleryControlsContainer.childNodes[1] ? galleryControlsContainer.childNodes[1].innerHTML = this.carouselControls[1] : null;
   }
- 
+
   // Add a click event listener to trigger setCurrentState method to rearrange carousel
   useControls() {
     const triggers = [...galleryControlsContainer.childNodes];

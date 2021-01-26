@@ -7,8 +7,6 @@ import { LifestyleComponent } from 'src/components/lifestyle/lifestyle.component
 import { ProjectOverviewComponent } from 'src/components/project-overview/project-overview.component';
 import { ServiceComponent } from 'src/components/service/service.component';
 import { HomeComponent } from 'src/components/home/home.component';
-import { ProjectAlraziqComponent } from 'src/components/project-alraziq/project-alraziq.component';
-import { ProjectUpcomingComponent } from 'src/components/project-upcoming/project-upcoming.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,8 +17,6 @@ const routes: Routes = [
   { path: 'lifestyle', component: LifestyleComponent },
   { path: 'project', component: ProjectOverviewComponent },
   { path: 'service', component: ServiceComponent },
-  { path: 'alraqiz', component: ProjectAlraziqComponent },
-  { path: 'upcoming-projects', component: ProjectUpcomingComponent },
 ];
 
 @NgModule({

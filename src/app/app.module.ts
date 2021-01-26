@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,8 +12,7 @@ import { ProjectOverviewComponent } from 'src/components/project-overview/projec
 import { ServiceComponent } from 'src/components/service/service.component';
 import { HeaderComponent } from 'src/components/header/header.component';
 import { HomeComponent } from 'src/components/home/home.component';
-import { ProjectAlraziqComponent } from 'src/components/project-alraziq/project-alraziq.component';
-import { ProjectUpcomingComponent } from 'src/components/project-upcoming/project-upcoming.component';
+import { PanoramaImageRendererComponent } from 'src/components/project-overview/panorama-image-renderer/panorama-image-renderer.component';
 
 
 @NgModule({
@@ -27,14 +26,14 @@ import { ProjectUpcomingComponent } from 'src/components/project-upcoming/projec
     ServiceComponent,
     HeaderComponent,
     HomeComponent,
-    ProjectAlraziqComponent,
-    ProjectUpcomingComponent
+    PanoramaImageRendererComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ThreeSixtyModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
