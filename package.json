@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "host-build": "ng serve --host=192.168.1.103 --disable-host-check --ssl true",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -20,11 +21,13 @@
     "@angular/platform-browser-dynamic": "~11.0.6",
     "@angular/router": "~11.0.6",
     "@mediaman/angular-three-sixty": "0.0.8",
+    "ngx-captcha": "^8.0.1",
+    "aframe": "^1.1.0",
     "bootstrap": "^4.5.3",
     "marzipano": "^0.10.1",
     "ngx-lightbox": "^2.2.2",
     "rxjs": "~6.6.0",
-    "simplelightbox": "^2.7.0",
+    "three": "^0.124.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },

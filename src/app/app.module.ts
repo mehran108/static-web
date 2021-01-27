@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ThreeSixtyModule } from '@mediaman/angular-three-sixty';
 import { AboutComponent } from 'src/components/about/about.component';
 import { ContactComponent } from 'src/components/contact/contact.component';
 import { DealershipComponent } from 'src/components/dealership/dealership.component';
@@ -15,6 +14,9 @@ import { HomeComponent } from 'src/components/home/home.component';
 import { ProjectAlraziqComponent } from 'src/components/project-alraziq/project-alraziq.component';
 import { ProjectUpcomingComponent } from 'src/components/project-upcoming/project-upcoming.component';
 import { LightboxModule } from 'ngx-lightbox';
+import { PanoramaImageRendererComponent } from 'src/components/project-overview/panorama-image-renderer/panorama-image-renderer.component';
+import { NgxCaptchaModule } from 'ngx-captcha';
+import { ThreeSixtyModule } from '@mediaman/angular-three-sixty';
 
 
 @NgModule({
@@ -28,6 +30,7 @@ import { LightboxModule } from 'ngx-lightbox';
     ServiceComponent,
     HeaderComponent,
     HomeComponent,
+    PanoramaImageRendererComponent,
     ProjectAlraziqComponent,
     ProjectUpcomingComponent
   ],
@@ -35,8 +38,10 @@ import { LightboxModule } from 'ngx-lightbox';
     BrowserModule,
     AppRoutingModule,
     ThreeSixtyModule,
-    LightboxModule
+    LightboxModule,
+    NgxCaptchaModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
