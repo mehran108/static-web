@@ -235,7 +235,15 @@
 				max-width: 100px;
 			}
 		}
-	}
+  }
+  .logo2{
+    display: none;
+    @media (min-width: 1200px) {
+      margin-left: 50px;
+      display: block;
+    }
+   
+  }
 	ul {
 		display: flex;
 		@media (max-width: 767px) {
@@ -264,5 +272,43 @@
 				}
 			}
 		}
-	}
+  }
+
 }
+
+.top_bar2{
+  position: fixed;
+  left: 85px;
+  top: 110px;
+  right: 12px;
+  color: #fff;
+  padding: 8px 0;
+  display: flex;
+  z-index: 9;
+  overflow-x: auto;
+  align-items: center;
+  &.project{
+    background-color: #b98956;
+  }
+  &.upcoming{
+    background-color: #b6ab4b;
+  }
+  &.alraziq{
+    background-color: #d04647;
+  }
+  @media (min-width: 992px) {
+    justify-content: flex-end;
+    left: inherit;
+    right: 20px;
+  }
+  li{
+    margin: 0 15px;
+    a{
+      color: #fff;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+  }
+}
+
+

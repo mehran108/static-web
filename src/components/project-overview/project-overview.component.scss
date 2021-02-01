@@ -198,6 +198,17 @@ h2 {
     padding-top: 70px;
     padding-bottom: 120px;
     overflow: hidden;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url('../../assets/images/project/overview-side.png');
+        background-repeat: no-repeat;
+        height: 850px;
+        width: 320px;
+    }
     .overview_items {
         margin-top: 70px;
     }
