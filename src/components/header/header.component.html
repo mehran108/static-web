@@ -67,7 +67,7 @@
   <div id="top_bar">
     <div class="d-flex">
       <a href="#" class="logo"><img src="../assets/images/home/logo.png" alt="logo"></a>
-      <a href="#" class="logo2"><img src="../assets/images/project/header-icon2.png" alt="logo"></a>
+      <a href="#" class="logo2"><img src="../assets/images/project/header-icon2.png" alt="logo" *ngIf="checkIfToShow()"></a>
     </div>
     
     <ul>
@@ -84,7 +84,7 @@
     
   </div>
 
-  <ul class="top_bar2 project">
+  <ul class="top_bar2" [ngClass]="getClass()" *ngIf="checkIfToShow()">
     <li><a href="#">Overview</a>
     </li>
     <li><a href="#">Features</a>
