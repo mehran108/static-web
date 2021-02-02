@@ -13,7 +13,10 @@ export class ProjectUpcomingComponent implements OnInit, AfterViewInit {
   public size = 'normal';
 
   ngOnInit() {
+    setTimeout(() => {
+      document.getElementsByClassName('slick-cloned').length > 0 ? true : window.location.reload();
 
+    }, 100);
   }
   ngAfterViewInit() {
     const galleryContainer = document.querySelector('.gallery-container');

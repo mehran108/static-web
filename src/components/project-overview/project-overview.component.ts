@@ -12,11 +12,16 @@ export class ProjectOverviewComponent implements OnInit, AfterViewInit {
   public lang = 'en';
   public theme = 'light';
   public size = 'normal';
-
+  public showWrapper = false;
   ngOnInit() {
+    setTimeout(() => {
+      document.getElementsByClassName('slick-cloned').length > 0 ? true : window.location.reload();
+
+    }, 100);
 
   }
   ngAfterViewInit() {
+    this.showWrapper = true;
     const galleryContainer = document.querySelector('.gallery-container');
     const galleryControlsContainer = document.querySelector('.gallery-controls');
     const galleryControls = ['previous', 'next'];
