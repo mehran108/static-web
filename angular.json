@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "static-web"
+  "defaultProject": "static-web",
+  "cli": {
+    "analytics": false
+  }
 }
