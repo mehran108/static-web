@@ -1,0 +1,99 @@
+  <!-- Navigation -->
+  <div class="sticky-header">
+    <div class="menu-btn fixed-menu">
+      <div class="menu-wrap">
+        <img src="assets/images/home/hamburger.png" alt="hamburger" id="open-side">
+        <i class="fa fa-close fa-2x" aria-hidden="true" id="close-side"></i>
+      </div>
+    </div>
+    <div class="wrapper animate-menu">
+      <div class="side-menu">
+        <nav id="sidebar" class="navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/about">About Us <img src="../assets/images/home/right-arrow.png"
+                  alt="right-arrow"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Projects <img src="../assets/images/home/right-arrow.png"
+                  alt="right-arrow"></a>
+              <ul>
+                <li>
+                  <a href="javascript:void(0)" class="nav-link">Complete Projects <img
+                      src="../assets/images/home/right-arrow.png" alt="right-arrow"></a>
+                  <ul>
+                    <li>
+                      <a routerLink="/project" class="nav-link">Bismillah</a>
+                    </li>
+                    <li>
+                      <a routerLink="/alraziq" class="nav-link">Alraziq</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="nav-link">Ongoing Projects</a>
+                </li>
+                <li>
+                  <a routerLink="/upcoming" class="nav-link">Upcoming Projects</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/service">Services <img src="../assets/images/home/right-arrow.png"
+                  alt="right-arrow"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/lifestyle">lifestyle <img src="../assets/images/home/right-arrow.png"
+                  alt="right-arrow"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/dealership">Dealership <img src="../assets/images/home/right-arrow.png"
+                  alt="right-arrow"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contact">CONTACT <img src="../assets/images/home/right-arrow.png"
+                  alt="right-arrow"></a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+    <!-- <div class="overlay"></div> -->
+  </div>
+  <!-- Navigation -->
+
+  <!--Top Bar-->
+  <div id="top_bar">
+    <div class="d-flex">
+      <a href="#" class="logo"><img src="../assets/images/home/logo.png" alt="logo"></a>
+      <a href="#" class="logo2"><img src="../assets/images/project/header-icon2.png" alt="logo" *ngIf="checkIfToShow()"></a>
+    </div>
+    
+    <ul>
+      <li><a href="mailto:info@Bismillahdevelops.pk"><img src="../assets/images/home/mail.png"
+            alt="mail"><span>info@Bismillahdevelops.pk</span></a>
+      </li>
+      <li><a href="tel:+11-191-132"><img src="../assets/images/home/phone.png" alt="phone"><span>11-191-132</span></a>
+      </li>
+      <li><a href="#"><img src="../assets/images/home/facebook.png" alt="facebook"></a></li>
+      <li><a href="#"><img src="../assets/images/home/instagram.png" alt="instagram"></a></li>
+      <li><a href="#"><img src="../assets/images/home/twitter.png" alt="twitter"></a></li>
+      <li><a href="#"><img src="../assets/images/home/linkdin.png" alt="linkdin"></a></li>
+    </ul>
+    
+  </div>
+
+  <ul class="top_bar2" [ngClass]="getClass()" *ngIf="checkIfToShow()">
+    <li><a href="#">Overview</a>
+    </li>
+    <li><a href="#">Features</a>
+    </li>
+    <li><a href="#">Current Offering</a></li>
+    <li><a href="#">Floor Plans</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Videos</a></li>
+    <li><a href="#">Location</a></li>
+    <li><a href="#">Enquiry</a></li>
+  </ul>
+  <!--Top Bar-->

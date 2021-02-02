@@ -1,0 +1,94 @@
+//lifestyle bg
+.lifestyle-bg {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    &.green {
+        background-color: #095151;
+        .lifestyle-intro {
+            background-color: rgba($color: #234047, $alpha: 0.9);
+            color: #fff;
+            right: 100px;
+            @media (max-width: 767px) {
+                right: 0;
+                left: 0;
+            }
+            p {
+                border-top: 1px solid #889495;
+                border-bottom: 1px solid #889495;
+            }
+        }
+    }
+    &.grey {
+        background-color: #ebebeb;
+        .lifestyle-intro {
+            background-color: rgba($color: #1faaae, $alpha: 0.9);
+            color: #022020;
+            left: 100px;
+            @media (max-width: 767px) {
+                right: 0;
+                left: 0;
+            }
+            p {
+                border-top: 1px solid #022020;
+                border-bottom: 1px solid #022020;
+            }
+        }
+    }
+}
+
+//lifestyle details
+.lifestyle-details {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 630px;
+    &.bg1 {
+        background-image: url('../../assets/images/lifestyle/lifestyle-bg1.png');
+    }
+    &.bg2 {
+        background-image: url('../../assets/images/lifestyle/lifestyle-bg2.png');
+    }
+    &.bg3 {
+        background-image: url('../../assets/images/lifestyle/lifestyle-bg3.png');
+    }
+    &.bg4 {
+        background-image: url('../../assets/images/lifestyle/lifestyle-bg4.png');
+    }
+    &.bg5 {
+        background-image: url('../../assets/images/lifestyle/lifestyle-bg5.png');
+    }
+    &.bg6 {
+        background-image: url('../../assets/images/lifestyle/lifestyle-bg6.png');
+    }
+    .lifestyle-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 80px;
+        max-width: 395px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        @media (max-width: 767px) {
+            padding: 30px;
+            max-width: inherit;
+        }
+    }
+    h1 {
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-style: italic;
+    }
+    p {
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        margin-top: 10px;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+    span {
+        font-size: 14px;
+    }
+}

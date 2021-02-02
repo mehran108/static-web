@@ -1,0 +1,23 @@
+	@import 'app-variables';
+	@import '../bootstrap/mixins';
+	@mixin placeholder {
+		&::-webkit-input-placeholder { @content; }
+		&:-moz-placeholder { @content; }
+		&::-moz-placeholder { @content; }
+		&:-ms-input-placeholder { @content; }
+  }
+
+  @mixin rgba-background($hexcolor, $opacity) {
+    background-color: $hexcolor;
+    background-color: rgba($hexcolor, $opacity);
+	}
+	
+	@mixin img-retina-file-only($file-1x, $file-2x) {
+	  background-image: url($file-1x);
+	  @media only screen and (min-resolution: 192dpi),
+	  // IE9-11 don't support dppx
+	  only screen and (min-resolution: 2dppx) {
+	    // Standardized
+	    background-image: url($file-2x);
+	  }
+	}
