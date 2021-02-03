@@ -114,8 +114,7 @@
             position: relative;
             &:hover {
               >ul {
-                visibility: visible;
-                opacity: 1;
+                display: block;
               }
             }
             >ul {
@@ -127,8 +126,7 @@
               position: relative;
               top: 10px;
               left: 20px;
-              visibility: hidden;
-              opacity: 0;
+              display: none;
               z-index: 1;
               right: 0;
               @media (min-width: 768px) {
@@ -139,8 +137,7 @@
                 position: relative;
                 &:hover {
                   >ul {
-                    visibility: visible;
-                    opacity: 1;
+                    display: block;
                   }
                 }
                 .nav-link {
@@ -160,7 +157,7 @@
                   position: relative;
                   top: 0;
                   left: 20px;
-                  visibility: hidden;
+                  display: none;
                   z-index: 9;
                   width: 100%;
                   @media (min-width: 768px) {

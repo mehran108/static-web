@@ -1,5 +1,6 @@
 //custom js
 $(document).ready(function () {
+  $(this).scrollTop(0);
   $("#open-side").click(function (e) {
     e.stopPropagation();
     $(".wrapper").fadeIn("slow");

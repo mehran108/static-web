@@ -235,7 +235,11 @@ p {
   display: flex;
   align-items: center;
   padding-left: 70px;
-
+  .container{
+    @media (max-width: 767px) {
+      padding-left: 20px;
+    }
+  }
   h1 {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
