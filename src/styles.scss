@@ -127,6 +127,19 @@ p {
   }
 }
 
+#project_main{
+  #home_main{
+    position: relative;
+    .globe{
+      position: absolute;
+    left: 50%;
+    bottom: 50px;
+    z-index: 1;
+    cursor: pointer;
+    }
+  }
+}
+
 //project gallery
 .gallery_wrapper {
   background-color: #f2f2f2;
@@ -138,6 +151,19 @@ p {
   }
 
   #slick1 {
+    .slide-item{
+      padding-right: 2px;
+      overflow: hidden;
+      &:hover{
+        img {
+          transform: scale(1.5);
+        }
+      }
+    }
+    img{
+      max-width: 100%;
+      transition: transform .9s ease;
+    }
     .slick-prev {
       left: 35%;
       top: inherit;

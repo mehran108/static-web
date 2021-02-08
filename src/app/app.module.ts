@@ -17,6 +17,7 @@ import { LightboxModule } from 'ngx-lightbox';
 import { PanoramaImageRendererComponent } from 'src/components/project-overview/panorama-image-renderer/panorama-image-renderer.component';
 import { NgxCaptchaModule } from 'ngx-captcha';
 import { ThreeSixtyModule } from '@mediaman/angular-three-sixty';
+import { FooterComponent } from 'src/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ThreeSixtyModule } from '@mediaman/angular-three-sixty';
     HomeComponent,
     PanoramaImageRendererComponent,
     ProjectAlraziqComponent,
-    ProjectUpcomingComponent
+    ProjectUpcomingComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
