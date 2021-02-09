@@ -31,13 +31,13 @@
       #open-side {
         display: none;
       }
-  
+
       #close-side {
         display: block;
       }
     }
   }
-  
+
   //header wrapper
   .wrapper {
     background: rgba($color: #22bebd, $alpha: 0.9);
@@ -172,7 +172,7 @@
       }
     }
   }
-  
+
   //header overlay
   .overlay {
     position: fixed;
@@ -239,7 +239,7 @@
       margin-left: 50px;
       display: block;
     }
-   
+
   }
 	ul {
 		display: flex;
@@ -307,5 +307,9 @@
     }
   }
 }
-
+.top_bar2 {
+  li {
+    cursor: pointer;
+  }
+}
 

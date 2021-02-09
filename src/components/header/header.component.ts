@@ -43,4 +43,13 @@ export class HeaderComponent implements OnInit {
     $(".menu-btn").addClass("menu-inactive");
     $('.overlay').removeClass('active');
   }
+  public scrollIntoView = (id: string) => {
+    setTimeout(() => {
+      const component = document.getElementById(id.toLowerCase());
+      if (component) {
+        component.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  }
 }
+

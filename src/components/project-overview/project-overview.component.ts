@@ -20,6 +20,9 @@ export class ProjectOverviewComponent implements OnInit, AfterViewInit {
     }, 100);
 
   }
+  open360Image = () => {
+    window.open(`${window.location.origin}/panorama?img=${btoa('bhs')}`);
+  }
   ngAfterViewInit() {
     this.showWrapper = true;
     const galleryContainer = document.querySelector('.gallery-container');

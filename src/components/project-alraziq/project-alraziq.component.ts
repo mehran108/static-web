@@ -35,7 +35,9 @@ export class ProjectAlraziqComponent implements OnInit, AfterViewInit {
     exampleCarousel.setInitialState();
     exampleCarousel.useControls();
   }
-
+  open360Image = () => {
+    window.open(`${window.location.origin}/panorama?img=${btoa('alraziq')}`);
+  }
 }
 
 class Carousel {

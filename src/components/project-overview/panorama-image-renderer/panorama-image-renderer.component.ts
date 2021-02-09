@@ -1,6 +1,7 @@
 
 import { Component, ChangeDetectionStrategy, OnInit, OnDestroy, ChangeDetectorRef, HostListener } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { param } from 'jquery';
 import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-panorama-image-renderer',
@@ -8,6 +9,14 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./panorama-image-renderer.component.scss']
 })
 export class PanoramaImageRendererComponent implements OnInit {
+  image = '';
+  constructor(public route: ActivatedRoute) {
+    this.route.queryParams.subscribe(params => {
+      if (params.img) {
+        this.image = atob(params.img);
+      }
+    })
+  }
   ngOnInit() {
     window.addEventListener("wheel", (event: any) => {
       const delta = Math.sign(event.wheelDelta);

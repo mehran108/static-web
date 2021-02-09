@@ -1,7 +1,7 @@
- <!--Mian Content-->
- <div id="project_main">
-   <div id="home_main">
-     <img src="../assets/images/project/globe.png" alt="globe" class="globe">
+<!--Mian Content-->
+<div id="project_main">
+  <div id="home_main">
+    <img (click)="open360Image()" src="../assets/images/project/globe.png" alt="globe" class="globe">
     <div class="single-item">
       <div><img src="../assets/images/main-banner/banner01.png" alt="banner"></div>
       <div><img src="../assets/images/main-banner/banner02.png" alt="banner"></div>
@@ -9,71 +9,7 @@
       <div><img src="../assets/images/main-banner/banner04.png" alt="banner"></div>
       <div><img src="../assets/images/main-banner/banner05.png" alt="banner"></div>
     </div>
-   </div>
-  
-  <!-- <div class="threeSixty-wrapper">
-   <body class="multiple-scenes view-control-buttons">
-    <app-panorama-image-renderer></app-panorama-image-renderer>
-     <div id="pano"></div>
-   
-     <div id="sceneList">
-       <ul class="scenes">
-         <a href="javascript:void(0)" class="scene" data-id="oriente-station">
-           <li class="text">Oriente Station</li>
-         </a>
-         <a href="javascript:void(0)" class="scene" data-id="electricity-museum">
-           <li class="text">Electricity Museum</li>
-         </a>
-         <a href="javascript:void(0)" class="scene" data-id="jeronimos">
-           <li class="text">Jerónimos Monastery</li>
-         </a>
-       </ul>
-     </div>
-   
-     <div id="titleBar">
-       <h1 class="sceneName"></h1>
-     </div>
-   
-     <a href="javascript:void(0)" id="autorotateToggle">
-       <img class="icon off" src="assets/img/play.png">
-       <img class="icon on" src="assets/img/pause.png">
-     </a>
-   
-     <a href="javascript:void(0)" id="fullscreenToggle">
-       <img class="icon off" src="assets/img/fullscreen.png">
-       <img class="icon on" src="assets/img/windowed.png">
-     </a>
-   
-     <a href="javascript:void(0)" id="sceneListToggle">
-       <img class="icon off" src="assets/img/expand.png">
-       <img class="icon on" src="assets/img/collapse.png">
-     </a>
-   
-     <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
-       <img class="icon" src="assets/img/up.png">
-     </a>
-     <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
-       <img class="icon" src="assets/img/down.png">
-     </a>
-     <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
-       <img class="icon" src="assets/img/left.png">
-     </a>
-     <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
-       <img class="icon" src="assets/img/right.png">
-     </a>
-     <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
-       <img class="icon" src="assets/img/plus.png">
-     </a>
-     <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
-       <img class="icon" src="assets/img/minus.png">
-     </a>
-   
-   
-   
-   </body>
-   
-  </div> -->
-  <!--project banner-->
+  </div>
   <!--project overview-->
   <section id="project_overview">
     <div class="container">
@@ -148,7 +84,7 @@
   <section id="project_features">
     <div class="container">
       <div class="row">
-        <div class="col-12 text-center">
+        <div id="features" class="col-12 text-center">
           <h2 class="project_title">Features & Amenities</h2>
         </div>
       </div>
@@ -236,37 +172,69 @@
         <div class="row">
           <div class="slick-wrapper">
             <div id="slick1">
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img1.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img1.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img1.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img1.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img2.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img2.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img2.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img2.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img3.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img3.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img3.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img3.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img4.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img4.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img4.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img4.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img5.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img5.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img5.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img5.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img6.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img6.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img6.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img6.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img7.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img7.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img7.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img7.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img8.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img8.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img8.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img8.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img1.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img1.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img1.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img1.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img2.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img2.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img2.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img2.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img3.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img3.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img3.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img3.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img4.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img4.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img4.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img4.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img5.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img5.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img5.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img5.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img6.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img6.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img6.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img6.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img7.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img7.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img7.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img7.png"
+                    alt="gallery-img"></a>
               </div>
-              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img8.png" data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img8.png" alt="gallery-img"></a>
+              <div class="slide-item"><a class="example-image-link" href="../assets/images/alraziq/gallery-img8.png"
+                  data-lightbox="example-set"><img class="example-image" src="../assets/images/alraziq/gallery-img8.png"
+                    alt="gallery-img"></a>
               </div>
             </div>
           </div>
@@ -315,7 +283,8 @@
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-md-12 col-lg-7">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.80623157635!2d74.17634081499696!3d31.556931981357582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918e2c2f5aec8b3%3A0x14bb2014ca3ed0d5!2sAl%20Raziq%20Garden!5e0!3m2!1sen!2s!4v1612301396233!5m2!1sen!2s"
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.80623157635!2d74.17634081499696!3d31.556931981357582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918e2c2f5aec8b3%3A0x14bb2014ca3ed0d5!2sAl%20Raziq%20Garden!5e0!3m2!1sen!2s!4v1612301396233!5m2!1sen!2s"
             style="height: 600px; width: 100%;"></iframe><noscript> Full functionality of this site
             requires JavaScript to
             be enabled. Learn how to <a href="https://javascriptdownload.org/">Download
