@@ -137,6 +137,17 @@ p {
     z-index: 1;
     cursor: pointer;
     }
+    .single-item .slick-slide img{
+      height: 100vh;
+      width: 100%;
+      @media (min-width: 992px){
+        height: 100%;
+      }
+    }
+    .single-item .slick-prev, 
+    .single-item .slick-next{
+      top: 55%;
+    }
   }
 }
 
