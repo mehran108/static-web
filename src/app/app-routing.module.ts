@@ -9,6 +9,7 @@ import { ServiceComponent } from 'src/components/service/service.component';
 import { HomeComponent } from 'src/components/home/home.component';
 import { ProjectAlraziqComponent } from 'src/components/project-alraziq/project-alraziq.component';
 import { ProjectUpcomingComponent } from 'src/components/project-upcoming/project-upcoming.component';
+import { PanoramaImageRendererComponent } from 'src/components/project-overview/panorama-image-renderer/panorama-image-renderer.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'project', component: ProjectOverviewComponent },
   { path: 'service', component: ServiceComponent },
   { path: 'alraziq', component: ProjectAlraziqComponent },
-  { path: 'upcoming', component: ProjectUpcomingComponent }
+  { path: 'upcoming', component: ProjectUpcomingComponent },
+  { path: 'panorama', component: PanoramaImageRendererComponent }
 ];
 
 @NgModule({

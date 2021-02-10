@@ -66,7 +66,7 @@
       <a href="#" class="logo"><img src="../assets/images/home/logo.png" alt="logo"></a>
       <a href="#" class="logo2"><img src="../assets/images/project/header-icon2.png" alt="logo" *ngIf="checkIfToShow()"></a>
     </div>
-    
+
     <ul>
       <li><a href="mailto:info@Bismillahdevelops.pk"><img src="../assets/images/home/mail.png"
             alt="mail"><span>info@Bismillahdevelops.pk</span></a>
@@ -78,19 +78,19 @@
       <li><a href="#"><img src="../assets/images/home/twitter.png" alt="twitter"></a></li>
       <li><a href="#"><img src="../assets/images/home/linkdin.png" alt="linkdin"></a></li>
     </ul>
-    
+
   </div>
 
   <ul class="top_bar2" [ngClass]="getClass()" *ngIf="checkIfToShow()">
-    <li><a href="#">Overview</a>
+    <li><a (click) ="scrollIntoView('project_overview')">Overview</a>
     </li>
-    <li><a href="#">Features</a>
+    <li><a (click) ="scrollIntoView('project_features')">Features</a>
     </li>
-    <li><a href="#">Current Offering</a></li>
-    <li><a href="#">Floor Plans</a></li>
-    <li><a href="#">Gallery</a></li>
-    <li><a href="#">Videos</a></li>
-    <li><a href="#">Location</a></li>
-    <li><a href="#">Enquiry</a></li>
+    <li><a (click) ="scrollIntoView('current-offering')">Current Offering</a></li>
+    <li><a (click) ="scrollIntoView('floor-plans')">Floor Plans</a></li>
+    <li><a (click) ="scrollIntoView('project_gallery')">Gallery</a></li>
+    <li><a (click) ="scrollIntoView('project_videos')">Videos</a></li>
+    <li><a (click) ="scrollIntoView('project_location')">Location</a></li>
+    <li><a (click) ="scrollIntoView('project_enquiry')">Enquiry</a></li>
   </ul>
   <!--Top Bar-->
