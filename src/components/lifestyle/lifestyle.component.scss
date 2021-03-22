@@ -42,6 +42,52 @@
     }
 }
 
+#lifestyles_main{
+    .single-item{
+        .slick-prev,
+        .slick-next{
+            top: 90%;
+        }
+    }
+    .slick-slide{
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #000;
+            opacity: 0.5;
+        }
+        .lifestyle-heading{
+            position: absolute;
+            top: 50%;
+            left: 80px;
+            max-width: 400px;
+            @media (min-width: 992px){
+                left: 140px;
+            }
+            h1{
+                color: white;
+                font-family: 'Lato', sans-serif;
+                font-weight: bold;
+                font-style: italic;
+            }
+            p{
+                font-family: 'Lato', sans-serif;
+                font-style: italic;
+                margin-top: 10px;
+                font-size: 25px;
+                color: white;
+            }
+        }
+    }
+}
+
+
+
 //lifestyle details
 .lifestyle-details {
     background-position: center;
