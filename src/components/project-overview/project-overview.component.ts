@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import { ReCaptcha2Component } from 'ngx-captcha';
 
 @Component({
@@ -7,6 +8,8 @@ import { ReCaptcha2Component } from 'ngx-captcha';
   styleUrls: ['./project-overview.component.scss']
 })
 export class ProjectOverviewComponent implements OnInit, AfterViewInit {
+  constructor(public router: Router) {
+  }
   siteKey = '6Ld0NJoUAAAAABxvzEFKiouFUniWfYC8uIUfBeGT';
   public type = 'v3';
   public lang = 'en';
@@ -19,6 +22,20 @@ export class ProjectOverviewComponent implements OnInit, AfterViewInit {
 
     }, 100);
 
+  }
+  getClass() {
+    if (this.router.url === "/alraziq") {
+      return "alraziq-wrapper";
+    }
+    else if (this.router.url === "/project") {
+      return "project-wrapper";
+    }
+    else if (this.router.url === "/upcoming") {
+      return "upcoming-wrapper";
+    }
+    else {
+      return "";
+    }
   }
   open360Image = () => {
     window.open(`${window.location.origin}/panorama?img=${btoa('bhs')}`);

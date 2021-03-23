@@ -226,6 +226,44 @@
 		background-repeat: no-repeat;
 		z-index: -1;
 	}
+  &.alraziq{
+    .logo2,
+    .logo4,
+    .logo5{
+      display: none;
+    }
+  }
+  &.project,
+  &.upcoming{
+    .logo3{
+      display: none;
+    }
+  }
+  &.project{
+    .logo4,
+    .logo5{
+      display: none;
+    }
+  }
+  &.upcoming{
+    .logo2,
+    .logo5{
+      display: none;
+    }
+  }
+  &.home,
+  &.kallar-kahar{
+    .logo2,
+    .logo3,
+    .logo4{
+      display: none;
+    }
+  }
+  &.home{
+    .logo5{
+      display: none;
+    }
+  }
 	.logo {
 		img {
 			@media (max-width: 767px) {
@@ -233,11 +271,16 @@
 			}
 		}
   }
-  .logo2{
+  .logo2,
+  .logo3,
+  .logo4,
+  .logo5{
     display: none;
     @media (min-width: 1200px) {
-      margin-left: 50px;
+      margin-left: 25px;
       display: block;
+      border-left: 1px solid #086a6a;
+      padding-left: 25px;
     }
 
   }
@@ -285,13 +328,13 @@
   overflow-x: auto;
   align-items: center;
   &.project{
-    background-color: #b98956;
+    background-color: #d81e24;
   }
   &.upcoming{
     background-color: #b6ab4b;
   }
   &.alraziq{
-    background-color: #d04647;
+    background-color: #d6ac60;
   }
   @media (min-width: 992px) {
     justify-content: flex-end;

@@ -31,7 +31,19 @@
                   </ul>
                 </li>
                 <li>
-                  <a routerLink="/upcoming" class="nav-link">Upcoming Projects</a>
+                  <a href="javascript:void(0)" class="nav-link">Upcoming Projects<img
+                    src="../assets/images/home/right-arrow.png" alt="right-arrow"></a>
+                    <ul>
+                      <li>
+                        <a href="/upcoming" class="nav-link">Upcoming</a>
+                      </li>
+                      <li>
+                        <a routerLink="/supreme-city" class="nav-link">Upcoming SupremeCity</a>
+                      </li>
+                      <li>
+                        <a routerLink="/kallar-kahar" class="nav-link">Upcoming KallarKahar</a>
+                      </li>
+                    </ul>
                 </li>
               </ul>
             </li>
@@ -61,10 +73,13 @@
   <!-- Navigation -->
 
   <!--Top Bar-->
-  <div id="top_bar">
+  <div id="top_bar" [ngClass]="getClass()">
     <div class="d-flex">
       <a href="#" class="logo"><img src="../assets/images/home/logo.png" alt="logo"></a>
-      <a href="#" class="logo2"><img src="../assets/images/project/header-icon2.png" alt="logo" *ngIf="checkIfToShow()"></a>
+      <a href="#" class="logo2"><img src="../assets/images/project/header-icon3.png" alt="logo" *ngIf="checkIfToShow()"></a>
+      <a href="#" class="logo3"><img src="../assets/images/alraziq/header-logo-alraziq.png" alt="logo" *ngIf="checkIfToShow()"></a>
+      <a href="#" class="logo4"><img src="../assets/images/upcoming/upcoming-logo.png" alt="logo"></a>
+      <a href="#" class="logo5"><img src="../assets/images/upcoming/kallar-kahar-logo.png" alt="logo"></a>
     </div>
 
     <ul>
@@ -86,8 +101,6 @@
     </li>
     <li><a (click) ="scrollIntoView('project_features')">Features</a>
     </li>
-    <li><a (click) ="scrollIntoView('current-offering')">Current Offering</a></li>
-    <li><a (click) ="scrollIntoView('floor-plans')">Floor Plans</a></li>
     <li><a (click) ="scrollIntoView('project_gallery')">Gallery</a></li>
     <li><a (click) ="scrollIntoView('project_videos')">Videos</a></li>
     <li><a (click) ="scrollIntoView('project_location')">Location</a></li>

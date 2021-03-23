@@ -28,13 +28,19 @@ export class HeaderComponent implements OnInit {
     else if (this.router.url === "/upcoming") {
       return "upcoming";
     }
+    else if (this.router.url === "/home") {
+      return "home";
+    }
+    else if (this.router.url === "/kallar-kahar") {
+      return "kallar-kahar";
+    }
     else {
       return "";
     }
   }
 
   checkIfToShow() {
-    return ["/alraziq", "/project", "/upcoming"].includes(this.router.url);
+    return ["/alraziq", "/project"].includes(this.router.url);
   }
   hideMenuHeader = () => {
     $(".wrapper").fadeOut("slow");

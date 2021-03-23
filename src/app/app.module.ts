@@ -18,6 +18,8 @@ import { PanoramaImageRendererComponent } from 'src/components/project-overview/
 import { NgxCaptchaModule } from 'ngx-captcha';
 import { ThreeSixtyModule } from '@mediaman/angular-three-sixty';
 import { FooterComponent } from 'src/components/footer/footer.component';
+import { UpcomingKallarKaharComponent } from 'src/components/upcoming-kallar-kahar/upcoming-kallar-kahar.component';
+import { UpcomingSupremeCityComponent } from 'src/components/upcoming-supreme-city/upcoming-supreme-city.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { FooterComponent } from 'src/components/footer/footer.component';
     PanoramaImageRendererComponent,
     ProjectAlraziqComponent,
     ProjectUpcomingComponent,
-    FooterComponent
+    FooterComponent,
+    UpcomingKallarKaharComponent,
+    UpcomingSupremeCityComponent
   ],
   imports: [
     BrowserModule,

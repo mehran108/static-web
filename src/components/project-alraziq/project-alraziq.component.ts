@@ -3,6 +3,7 @@ import {
   Component,
   OnInit
 } from '@angular/core';
+import { Router } from '@angular/router';
 import { ReCaptcha2Component } from 'ngx-captcha';
 
 
@@ -12,6 +13,8 @@ import { ReCaptcha2Component } from 'ngx-captcha';
   styleUrls: ['./project-alraziq.component.scss']
 })
 export class ProjectAlraziqComponent implements OnInit, AfterViewInit {
+  constructor(public router: Router) {
+  }
   siteKey = '6Ld0NJoUAAAAABxvzEFKiouFUniWfYC8uIUfBeGT';
   public type = 'v3';
   public lang = 'en';
@@ -22,6 +25,20 @@ export class ProjectAlraziqComponent implements OnInit, AfterViewInit {
       document.getElementsByClassName('slick-cloned').length > 0 ? true : window.location.reload();
 
     }, 100);
+  }
+  getClass() {
+    if (this.router.url === "/alraziq") {
+      return "alraziq-wrapper";
+    }
+    else if (this.router.url === "/project") {
+      return "project-wrapper";
+    }
+    else if (this.router.url === "/upcoming") {
+      return "upcoming-wrapper";
+    }
+    else {
+      return "";
+    }
   }
   ngAfterViewInit() {
     const galleryContainer = document.querySelector('.gallery-container');

@@ -1,5 +1,5 @@
 <!--Mian Content-->
-<div id="project_main">
+<div id="project_main" [ngClass]="getClass()">
   <div id="home_main">
     <img (click) = "open360Image()" src="../assets/images/project/globe.png" alt="globe" class="globe">
     <div class="single-item">
@@ -40,7 +40,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-lg-6">
-          <img src="../assets/images/project/overview-logo.png" alt="overview-logo" class="img-fluid">
+          <img src="../assets/images/project/overview-logo2.png" alt="overview-logo" class="img-fluid">
         </div>
         <div class="col-md-12 col-lg-6">
           <div class="overview_intro">
@@ -59,39 +59,39 @@
         <div class="col-md-6">
           <ul>
             <li>
-              <img src="../assets/images/project/overview-icon1.png" alt="overview-icon1">
+              <img src="../assets/images/project/project-icon1.png" alt="project-icon1">
               <p>Completed</p>
             </li>
             <li>
-              <img src="../assets/images/project/overview-icon2.png" alt="overview-icon1">
+              <img src="../assets/images/project/project-icon2.png" alt="project-icon1">
               <p>G.T Road Lahore</p>
             </li>
             <li>
-              <img src="../assets/images/project/overview-icon3.png" alt="overview-icon1">
+              <img src="../assets/images/project/project-icon3.png" alt="project-icon1">
               <p>Living Communtiy</p>
             </li>
             <li>
-              <img src="../assets/images/project/overview-icon4.png" alt="overview-icon1">
+              <img src="../assets/images/project/project-icon4.png" alt="project-icon1">
               <p>18,000 SQ-YD</p>
             </li>
             <li>
-              <img src="../assets/images/project/overview-icon5.png" alt="overview-icon1">
+              <img src="../assets/images/project/project-icon5.png" alt="project-icon1">
               <p>Save & Secure</p>
             </li>
             <li>
-              <img src="../assets/images/project/overview-icon6.png" alt="overview-icon1">
+              <img src="../assets/images/project/project-icon6.png" alt="project-icon1">
               <p>Walled Society</p>
             </li>
             <li>
-              <img src="../assets/images/project/overview-icon7.png" alt="overview-icon1">
+              <img src="../assets/images/project/project-icon7.png" alt="project-icon1">
               <p>2000 Commercial Plots</p>
             </li>
             <li>
-              <img src="../assets/images/project/overview-icon8.png" alt="overview-icon1">
+              <img src="../assets/images/project/project-icon8.png" alt="project-icon1">
               <p>5000 Resedentails Plots</p>
             </li>
             <li>
-              <img src="../assets/images/project/overview-icon9.png" alt="overview-icon1">
+              <img src="../assets/images/project/project-icon9.png" alt="project-icon1">
               <p>Booking Open</p>
             </li>
           </ul>
@@ -316,18 +316,20 @@
         </div>
         <div class="col-md-12 col-lg-5 d-flex align-items-center">
           <div class="location_info">
-            <img src="../assets/images/project/project-location.png" alt="project_location">
-            <h3>Bismillah Housing Scheme Head Office Main<br> G.T Road Bank Stop Manawan Lahore.
-            </h3>
+            <div class="location_inner">
+              <img src="../assets/images/project/project-location.png" alt="project_location">
+              <h3>Bismillah Housing Scheme Head Office Main<br> G.T Road Bank Stop Manawan Lahore.
+              </h3>
+            </div>
             <ul>
-              <li>On main Canal Bank Road, 6 km from Shahkam Chowk</li>
-              <li>1 km from Lahore ring road SL-3 interchange (Multan Road )</li>
-              <li>10 minutes away from Ferozepur Road</li>
-              <li>15 minute drive from M2 interchange</li>
-              <li>20 minutes from DHA Lahore</li>
-              <li>25 minutes away from Lahore Airport</li>
-              <li>3 minutes away from Main Multan road</li>
-              <li>10 minutes away from Main Multan road</li>
+              <li><img src="../assets/images/project/location-icon1.png" alt="location-icon"><span>Airport: 10km</span></li>
+              <li><img src="../assets/images/project/location-icon2.png" alt="location-icon"><span>Orange Train: 1.5km</span></li>
+              <li><img src="../assets/images/project/location-icon3.png" alt="location-icon"><span>Motowary: 8km</span></li>
+              <li><img src="../assets/images/project/location-icon4.png" alt="location-icon"><span>Hospital: 3km</span></li>
+              <li><img src="../assets/images/project/location-icon5.png" alt="location-icon"><span>Lahore Ring Road: 4km</span></li>
+              <li><img src="../assets/images/project/location-icon6.png" alt="location-icon"><span>Bank: 1.5km</span></li>
+              <li><img src="../assets/images/project/location-icon7.png" alt="location-icon"><span>Railway Station: 12km</span></li>
+              <li><img src="../assets/images/project/location-icon8.png" alt="location-icon"><span>Marke: 500m</span></li>
             </ul>
           </div>
         </div>

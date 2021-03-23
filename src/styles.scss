@@ -127,31 +127,73 @@ p {
   }
 }
 
-#project_main{
-  #home_main{
+#project_main {
+  #home_main {
     position: relative;
-    .globe{
+
+    .globe {
       position: absolute;
-    left: 50%;
-    bottom: 50px;
-    z-index: 1;
-    cursor: pointer;
+      left: 50%;
+      bottom: 50px;
+      z-index: 1;
+      cursor: pointer;
     }
-    .single-item .slick-slide img{
+
+    .single-item .slick-slide img {
       height: 100vh;
       width: 100%;
-      @media (min-width: 992px){
+
+      @media (min-width: 992px) {
         height: 100%;
       }
     }
+
     .single-item .slick-prev,
-    .single-item .slick-next{
+    .single-item .slick-next {
       top: 55%;
     }
   }
 }
 
 //project gallery
+.project-wrapper {
+  .gallery_wrapper {
+    #slick1 {
+      .slick-prev {
+        &:before {
+          background-image: url('assets/images/project/gallery-left-arrow2.png');
+        }
+      }
+
+      .slick-next {
+
+        &:before {
+          background-image: url('assets/images/project/gallery-right-arrow2.png');
+        }
+      }
+    }
+  }
+}
+
+.alraziq-wrapper {
+  .gallery_wrapper {
+    #slick1 {
+      .slick-prev {
+        &:before {
+          background-image: url('assets/images/alraziq/gallery-left-arrow.png');
+        }
+      }
+
+      .slick-next {
+
+        &:before {
+          background-image: url('assets/images/alraziq/gallery-right-arrow.png');
+        }
+      }
+    }
+  }
+}
+
 .gallery_wrapper {
   background-color: #f2f2f2;
   padding-top: 60px;
@@ -162,19 +204,22 @@ p {
   }
 
   #slick1 {
-    .slide-item{
+    .slide-item {
       padding-right: 2px;
       overflow: hidden;
-      &:hover{
+
+      &:hover {
         img {
           transform: scale(1.5);
         }
       }
     }
-    img{
+
+    img {
       max-width: 100%;
       transition: transform .9s ease;
     }
+
     .slick-prev {
       left: 35%;
       top: inherit;
@@ -248,8 +293,94 @@ p {
 }
 
 
-#lightbox{
+#lightbox {
   display: none;
+}
+
+.upcoming_banner {
+  .upcoming-banner-logo {
+    position: absolute;
+    top: 100px;
+    max-width: 300px;
+
+    @media (min-width: 768px) {
+      top: -20px;
+      max-width: inherit;
+      ;
+    }
+
+  }
+
+  .upcoming-comingsoon {
+    z-index: 1;
+  }
+
+  .upcoming-banner-info {
+    max-width: 500px;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    text-align: center;
+    margin-top: 30px;
+
+    p {
+      color: #1f4d5a;
+      font-size: 14px;
+      border-top: 1px solid gray;
+      border-bottom: 1px solid gray;
+      padding: 10px;
+      margin: 5px;
+    }
+  }
+
+  &.banner2 {
+    .upcoming-banner-logo {
+      top: 20%;
+    }
+
+    .upcoming-comingsoon {
+      position: absolute;
+      top: 45%;
+      max-width: 300px;
+    @media (min-width: 768px){
+      top: 40%;
+      max-width: 695px;
+      
+    }
+    @media (min-width: 1200px){
+      top: 140px;
+      max-width: 1279px;
+    }
+      
+    }
+
+    .upcoming-banner-info {
+      margin-top: 50px;
+      background-color: transparent;
+
+      p {
+        border: none;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.upcoming_banner {
+  background-image: url('assets/images/upcoming/upcoming-banner.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 884px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 70px;
+
+  &.banner2 {
+    background-image: url('assets/images/upcoming/kallar-kahar-banner.png');
+  }
 }
 
 #contact_banner {
@@ -272,11 +403,13 @@ p {
   display: flex;
   align-items: center;
   padding-left: 70px;
-  .container{
+
+  .container {
     @media (max-width: 767px) {
       padding-left: 20px;
     }
   }
+
   h1 {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -329,6 +462,13 @@ h2.contact_title {
     border: none;
     border-radius: 0;
     color: #268585;
+  }
+
+  input,
+  textarea {
+    &::placeholder {
+      color: #0fbbbb;
+    }
   }
 
   .btn {
@@ -447,6 +587,10 @@ h2.contact_title {
   }
 }
 
+#project_location {
+  padding-left: 70px;
+}
+
 //3D slider
 .gallery {
   width: 100%;
@@ -550,7 +694,25 @@ h2.contact_title {
 
 
 
+.project-wrapper {
+  .gallery-controls-previous::before {
+    background-image: url('assets/images/project/video-left-arrow2.png');
+  }
 
+  .gallery-controls-next::before {
+    background-image: url('assets/images/project/video-right-arrow2.png');
+  }
+}
+
+.alraziq-wrapper {
+  .gallery-controls-previous::before {
+    background-image: url('assets/images/alraziq/video-left-arrow.png');
+  }
+
+  .gallery-controls-next::before {
+    background-image: url('assets/images/alraziq/video-right-arrow.png');
+  }
+}
 
 .gallery-controls-previous::before {
   background-image: url('assets/images/project/video-left-arrow.png');
@@ -597,15 +759,18 @@ h2.contact_title {
   outline: none;
 }
 
-html.a-fullscreen{
+html.a-fullscreen {
   position: relative !important;
-  .threeSixty-wrapper{
+
+  .threeSixty-wrapper {
     height: 80vh;
   }
-  .a-canvas{
+
+  .a-canvas {
     position: relative !important;
   }
-  body{
+
+  body {
     overflow: visible !important;
   }
 }
@@ -1417,6 +1582,7 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
+
 .a-fullscreen {
   overflow: hidden;
 }
