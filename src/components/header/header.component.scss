@@ -67,12 +67,17 @@
             padding: 15px 0;
             width: 230px;
           }
+          .arrow-black{
+            display: none;
+          }
           &:hover {
-            color: #99ddde;
-            .icon-next {
-              &:before {
-                color: #99ddde;
-              }
+            color: #000;
+            font-weight: 900;
+            .arrow-black{
+              display: block;
+            }
+            .arrow-white{
+              display: none;
             }
           }
         }
