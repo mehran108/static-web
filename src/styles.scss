@@ -364,6 +364,31 @@ p {
       }
     }
   }
+  &.supreme-banner{
+    .upcoming-banner-logo{
+      position: static;
+    }
+    .upcoming-banner-info{
+      max-width: inherit;
+      background-color: transparent;
+      margin-top: 60px;
+      p{
+        margin: 0;
+        padding: 0;
+        border: none;
+        color: #fff;
+        font-size: 30px;
+        font-style: italic;
+      }
+      .upcoming-comingsoon{
+        margin: 20px 0;
+        max-width: 300px;
+        @media (min-width: 992px){
+          max-width: inherit;
+        }
+      }
+    }
+  }
 }
 
 .upcoming_banner {
@@ -380,6 +405,9 @@ p {
 
   &.banner2 {
     background-image: url('assets/images/upcoming/kallar-kahar-banner.png');
+  }
+  &.supreme-banner{
+    background-image: url('assets/images/upcoming/supreme-banner.png');
   }
 }
 

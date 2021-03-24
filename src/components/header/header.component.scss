@@ -229,7 +229,8 @@
   &.alraziq{
     .logo2,
     .logo4,
-    .logo5{
+    .logo5,
+    .logo6{
       display: none;
     }
   }
@@ -241,7 +242,8 @@
   }
   &.project{
     .logo4,
-    .logo5{
+    .logo5,
+    .logo6{
       display: none;
     }
   }
@@ -259,8 +261,40 @@
       display: none;
     }
   }
+  &.kallar-kahar{
+    .logo6{
+      display: none;
+    }
+  }
   &.home{
+    .logo5,
+    .logo6{
+      display: none;
+    }
+  }
+  &.upcoming{
+    .logo6{
+      display: none;
+    }
+  }
+  &.supreme-city{
+    .logo2,
+    .logo3,
+    .logo4,
     .logo5{
+      display: none;
+    }
+  }
+  &.about,
+  &.service,
+  &.lifestyle,
+  &.dealership,
+  &.contact{
+    .logo2,
+    .logo3,
+    .logo4,
+    .logo5,
+    .logo6{
       display: none;
     }
   }
@@ -274,7 +308,8 @@
   .logo2,
   .logo3,
   .logo4,
-  .logo5{
+  .logo5,
+  .logo6{
     display: none;
     @media (min-width: 1200px) {
       margin-left: 25px;

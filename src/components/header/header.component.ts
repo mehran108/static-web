@@ -34,6 +34,24 @@ export class HeaderComponent implements OnInit {
     else if (this.router.url === "/kallar-kahar") {
       return "kallar-kahar";
     }
+    else if (this.router.url === "/supreme-city") {
+      return "supreme-city";
+    }
+    else if (this.router.url === "/about") {
+      return "about";
+    }
+    else if (this.router.url === "/service") {
+      return "service";
+    }
+    else if (this.router.url === "/lifestyle") {
+      return "lifestyle";
+    }
+    else if (this.router.url === "/dealership") {
+      return "dealership";
+    }
+    else if (this.router.url === "/contact") {
+      return "contact";
+    }
     else {
       return "";
     }
