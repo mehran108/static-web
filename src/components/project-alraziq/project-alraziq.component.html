@@ -269,8 +269,8 @@
     </div>
   </section>
   <!--project videos-->
-   <!--project videos-->
-   <section id="project_videos">
+  <!--project videos-->
+  <section id="project_videos">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -279,8 +279,12 @@
       </div>
       <div class="row">
         <div class="col-12 text-center">
-          <img src="../../assets/images/alraziq/master-map.png" alt="" class="img-fluid">
-          <a href="#" class="d-block" style="margin-top: 40px;">View Large Map</a>
+          <lib-ngx-image-zoom [zoomMode]="'click'" [enableScrollZoom]="true" id="master-map"
+            [thumbImage]="'assets/images/alraziq/master-map.png'" [fullImage]="'assets/images/alraziq/master-map.png'">
+          </lib-ngx-image-zoom>
+          <!-- <img id="master-map" src="assets/images/alraziq/master-map.png" alt="" class="img-fluid"> -->
+          <a (click)="openFullScreenMode('master-map')" class="d-block" style="margin-top: 40px; cursor: pointer;">View
+            Large Map</a>
         </div>
       </div>
     </div>
@@ -314,14 +318,22 @@
               </h3>
             </div>
             <ul>
-              <li><img src="../assets/images/project/location-icon1.png" alt="location-icon"><span>Airport: 10km</span></li>
-              <li><img src="../assets/images/project/location-icon2.png" alt="location-icon"><span>Orange Train: 1.5km</span></li>
-              <li><img src="../assets/images/project/location-icon3.png" alt="location-icon"><span>Motowary: 8km</span></li>
-              <li><img src="../assets/images/project/location-icon4.png" alt="location-icon"><span>Hospital: 3km</span></li>
-              <li><img src="../assets/images/project/location-icon5.png" alt="location-icon"><span>Lahore Ring Road: 4km</span></li>
-              <li><img src="../assets/images/project/location-icon6.png" alt="location-icon"><span>Bank: 1.5km</span></li>
-              <li><img src="../assets/images/project/location-icon7.png" alt="location-icon"><span>Railway Station: 12km</span></li>
-              <li><img src="../assets/images/project/location-icon8.png" alt="location-icon"><span>Marke: 500m</span></li>
+              <li><img src="../assets/images/project/location-icon1.png" alt="location-icon"><span>Airport: 10km</span>
+              </li>
+              <li><img src="../assets/images/project/location-icon2.png" alt="location-icon"><span>Orange Train:
+                  1.5km</span></li>
+              <li><img src="../assets/images/project/location-icon3.png" alt="location-icon"><span>Motowary: 8km</span>
+              </li>
+              <li><img src="../assets/images/project/location-icon4.png" alt="location-icon"><span>Hospital: 3km</span>
+              </li>
+              <li><img src="../assets/images/project/location-icon5.png" alt="location-icon"><span>Lahore Ring Road:
+                  4km</span></li>
+              <li><img src="../assets/images/project/location-icon6.png" alt="location-icon"><span>Bank: 1.5km</span>
+              </li>
+              <li><img src="../assets/images/project/location-icon7.png" alt="location-icon"><span>Railway Station:
+                  12km</span></li>
+              <li><img src="../assets/images/project/location-icon8.png" alt="location-icon"><span>Marke: 500m</span>
+              </li>
             </ul>
           </div>
         </div>

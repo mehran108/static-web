@@ -26,6 +26,7 @@
     "jquery": "^3.5.1",
     "marzipano": "^0.10.1",
     "ngx-captcha": "^8.0.1",
+    "ngx-image-zoom": "^0.6.0",
     "ngx-lightbox": "^2.2.2",
     "rxjs": "~6.6.0",
     "three": "^0.124.0",
