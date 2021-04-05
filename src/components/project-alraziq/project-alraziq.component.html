@@ -299,8 +299,12 @@
       </div>
       <div class="row">
         <div class="col-12 text-center">
-          <img src="../../assets/images/alraziq/master-map.png" alt="" class="img-fluid">
-          <a href="#" class="d-block" style="margin-top: 40px;">View Large Map</a>
+          <lib-ngx-image-zoom [zoomMode]="'click'" [enableScrollZoom]="true" id="master-map"
+            [thumbImage]="'assets/images/alraziq/master-map.png'" [fullImage]="'assets/images/alraziq/master-map.png'">
+          </lib-ngx-image-zoom>
+          <!-- <img id="master-map" src="assets/images/alraziq/master-map.png" alt="" class="img-fluid"> -->
+          <a (click)="openFullScreenMode('master-map')" class="d-block" style="margin-top: 40px; cursor: pointer;">View
+            Large Map</a>
         </div>
       </div>
     </div>

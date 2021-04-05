@@ -53,7 +53,12 @@ export class ProjectOverviewComponent implements OnInit, AfterViewInit {
     exampleCarousel.setInitialState();
     exampleCarousel.useControls();
   }
-
+  openFullScreenMode(id: string) {
+    const domGrid = document.getElementById(id) as any;
+    if (domGrid) {
+      domGrid.webkitRequestFullscreen();
+    }
+  }
 }
 
 class Carousel {

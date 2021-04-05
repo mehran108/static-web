@@ -55,6 +55,12 @@ export class ProjectAlraziqComponent implements OnInit, AfterViewInit {
   open360Image = () => {
     window.open(`${window.location.origin}/panorama?img=${btoa('alraziq')}`);
   }
+  openFullScreenMode(id: string) {
+    const domGrid = document.getElementById(id) as any;
+    if (domGrid) {
+      domGrid.webkitRequestFullscreen();
+    }
+  }
 }
 
 class Carousel {

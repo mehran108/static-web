@@ -20,6 +20,7 @@ import { ThreeSixtyModule } from '@mediaman/angular-three-sixty';
 import { FooterComponent } from 'src/components/footer/footer.component';
 import { UpcomingKallarKaharComponent } from 'src/components/upcoming-kallar-kahar/upcoming-kallar-kahar.component';
 import { UpcomingSupremeCityComponent } from 'src/components/upcoming-supreme-city/upcoming-supreme-city.component';
+import { NgxImageZoomModule } from 'ngx-image-zoom';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,9 @@ import { UpcomingSupremeCityComponent } from 'src/components/upcoming-supreme-ci
     AppRoutingModule,
     ThreeSixtyModule,
     LightboxModule,
-    NgxCaptchaModule
+    NgxCaptchaModule,
+    NgxImageZoomModule // <-- Add this line
+
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
