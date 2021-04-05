@@ -1,7 +1,7 @@
 <!--Mian Content-->
 <div id="project_main" [ngClass]="getClass()">
   <div id="home_main">
-    <img (click) = "open360Image()" src="../assets/images/project/globe.png" alt="globe" class="globe">
+    <img (click)="open360Image()" src="../assets/images/project/globe.png" alt="globe" class="globe">
     <div class="single-item">
       <div><img src="../assets/images/project/slider1.jpg" alt="banner"></div>
       <div><img src="../assets/images/project/slider2.jpg" alt="banner"></div>
@@ -9,7 +9,7 @@
       <div><img src="../assets/images/project/slider4.jpg" alt="banner"></div>
       <div><img src="../assets/images/project/slider5.jpg" alt="banner"></div>
     </div>
-   </div>
+  </div>
   <!-- <div class="threeSixty-wrapper">
 
     <body class="multiple-scenes view-control-buttons">
@@ -116,66 +116,86 @@
       <div class="row">
         <div class="col-12">
           <ul>
-            <li class="feature-img1">
-              <div class="features_info">
-                <img src="../assets/images/project/feature-icon1.png" alt="feature-icon1">
-                <p>24/7 Electricity</p>
-              </div>
-            </li>
-            <li class="feature-img2">
-              <div class="features_info">
-                <img src="../assets/images/project/feature-icon2.png" alt="feature-icon1">
-                <p>Sports Complex</p>
-              </div>
-            </li>
-            <li class="feature-img3">
-              <div class="features_info">
-                <img src="../assets/images/project/feature-icon3.png" alt="feature-icon1">
-                <p>24/7 Security</p>
-              </div>
-            </li>
-            <li class="feature-img4">
-              <div class="features_info">
-                <img src="../assets/images/project/feature-icon4.png" alt="feature-icon1">
-                <p>Super Market</p>
-              </div>
-            </li>
-            <li class="feature-img5">
-              <div class="features_info">
-                <img src="../assets/images/project/feature-icon5.png" alt="feature-icon1">
-                <p>Survellance Systems</p>
-              </div>
-            </li>
-            <li class="feature-img6">
-              <div class="features_info">
-                <img src="../assets/images/project/feature-icon6.png" alt="feature-icon1">
-                <p>Community Center</p>
-              </div>
-            </li>
-            <li class="feature-img7">
-              <div class="features_info">
-                <img src="../assets/images/project/feature-icon7.png" alt="feature-icon1">
-                <p>Hospital</p>
-              </div>
-            </li>
-            <li class="feature-img8">
-              <div class="features_info">
-                <img src="../assets/images/project/feature-icon8.png" alt="feature-icon1">
-                <p>Mosque</p>
-              </div>
-            </li>
-            <li class="feature-img9">
-              <div class="features_info">
-                <img src="../assets/images/project/feature-icon9.png" alt="feature-icon1">
-                <p>School</p>
-              </div>
-            </li>
-            <li class="feature-img10">
-              <div class="features_info">
-                <img src="../assets/images/project/feature-icon10.png" alt="feature-icon1">
-                <p>Playland</p>
-              </div>
-            </li>
+            <div class="hover">
+              <li class="feature-img1">
+                <div class="features_info">
+                  <img src="../assets/images/project/feature-icon1.png" alt="feature-icon1">
+                  <p>24/7 Electricity</p>
+                </div>
+              </li>
+            </div>
+            <div class="hover">
+              <li class="feature-img2">
+                <div class="features_info">
+                  <img src="../assets/images/project/feature-icon2.png" alt="feature-icon1">
+                  <p>Sports Complex</p>
+                </div>
+              </li>
+            </div>
+            <div class="hover">
+              <li class="feature-img3">
+                <div class="features_info">
+                  <img src="../assets/images/project/feature-icon3.png" alt="feature-icon1">
+                  <p>24/7 Security</p>
+                </div>
+              </li>
+            </div>
+            <div class="hover">
+              <li class="feature-img4">
+                <div class="features_info">
+                  <img src="../assets/images/project/feature-icon4.png" alt="feature-icon1">
+                  <p>Super Market</p>
+                </div>
+              </li>
+            </div>
+            <div class="hover">
+              <li class="feature-img5">
+                <div class="features_info">
+                  <img src="../assets/images/project/feature-icon5.png" alt="feature-icon1">
+                  <p>Survellance Systems</p>
+                </div>
+              </li>
+            </div>
+            <div class="hover">
+              <li class="feature-img6">
+                <div class="features_info">
+                  <img src="../assets/images/project/feature-icon6.png" alt="feature-icon1">
+                  <p>Community Center</p>
+                </div>
+              </li>
+            </div>
+            <div class="hover">
+              <li class="feature-img7">
+                <div class="features_info">
+                  <img src="../assets/images/project/feature-icon7.png" alt="feature-icon1">
+                  <p>Hospital</p>
+                </div>
+              </li>
+            </div>
+            <div class="hover">
+              <li class="feature-img8">
+                <div class="features_info">
+                  <img src="../assets/images/project/feature-icon8.png" alt="feature-icon1">
+                  <p>Mosque</p>
+                </div>
+              </li>
+            </div>
+            <div class="hover">
+              <li class="feature-img9">
+                <div class="features_info">
+                  <img src="../assets/images/project/feature-icon9.png" alt="feature-icon1">
+                  <p>School</p>
+                </div>
+              </li>
+            </div>
+            <div class="hover">
+              <li class="feature-img10">
+                <div class="features_info">
+                  <img src="../assets/images/project/feature-icon10.png" alt="feature-icon1">
+                  <p>Playland</p>
+                </div>
+              </li>
+            </div>
           </ul>
         </div>
       </div>
@@ -192,7 +212,7 @@
       </div>
 
     </div>
-    <div class="gallery_wrapper" *ngIf = "showWrapper">
+    <div class="gallery_wrapper" *ngIf="showWrapper">
       <div class="container">
         <div class="row">
           <div class="slick-wrapper">
@@ -295,8 +315,8 @@
     </div>
   </section>
   <!--project videos-->
-   <!--project videos-->
-   <section id="project_videos">
+  <!--project videos-->
+  <section id="project_videos">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -325,7 +345,8 @@
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-md-12 col-lg-7">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6995.580158609729!2d74.47944903928817!3d31.600573248947658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391911eb93a2b9d5%3A0x1fca64a2187368ba!2sBismillah%20Housing%20Scheme!5e0!3m2!1sen!2s!4v1612302181904!5m2!1sen!2s"
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6995.580158609729!2d74.47944903928817!3d31.600573248947658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391911eb93a2b9d5%3A0x1fca64a2187368ba!2sBismillah%20Housing%20Scheme!5e0!3m2!1sen!2s!4v1612302181904!5m2!1sen!2s"
             style="height: 600px; width: 100%;"></iframe><noscript> Full functionality of this site
             requires JavaScript to
             be enabled. Learn how to <a href="https://javascriptdownload.org/">Download
@@ -339,14 +360,22 @@
               </h3>
             </div>
             <ul>
-              <li><img src="../assets/images/project/location-icon1.png" alt="location-icon"><span>Airport: 10km</span></li>
-              <li><img src="../assets/images/project/location-icon2.png" alt="location-icon"><span>Orange Train: 1.5km</span></li>
-              <li><img src="../assets/images/project/location-icon3.png" alt="location-icon"><span>Motowary: 8km</span></li>
-              <li><img src="../assets/images/project/location-icon4.png" alt="location-icon"><span>Hospital: 3km</span></li>
-              <li><img src="../assets/images/project/location-icon5.png" alt="location-icon"><span>Lahore Ring Road: 4km</span></li>
-              <li><img src="../assets/images/project/location-icon6.png" alt="location-icon"><span>Bank: 1.5km</span></li>
-              <li><img src="../assets/images/project/location-icon7.png" alt="location-icon"><span>Railway Station: 12km</span></li>
-              <li><img src="../assets/images/project/location-icon8.png" alt="location-icon"><span>Marke: 500m</span></li>
+              <li><img src="../assets/images/project/location-icon1.png" alt="location-icon"><span>Airport: 10km</span>
+              </li>
+              <li><img src="../assets/images/project/location-icon2.png" alt="location-icon"><span>Orange Train:
+                  1.5km</span></li>
+              <li><img src="../assets/images/project/location-icon3.png" alt="location-icon"><span>Motowary: 8km</span>
+              </li>
+              <li><img src="../assets/images/project/location-icon4.png" alt="location-icon"><span>Hospital: 3km</span>
+              </li>
+              <li><img src="../assets/images/project/location-icon5.png" alt="location-icon"><span>Lahore Ring Road:
+                  4km</span></li>
+              <li><img src="../assets/images/project/location-icon6.png" alt="location-icon"><span>Bank: 1.5km</span>
+              </li>
+              <li><img src="../assets/images/project/location-icon7.png" alt="location-icon"><span>Railway Station:
+                  12km</span></li>
+              <li><img src="../assets/images/project/location-icon8.png" alt="location-icon"><span>Marke: 500m</span>
+              </li>
             </ul>
           </div>
         </div>

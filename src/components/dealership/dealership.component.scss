@@ -16,15 +16,23 @@
 
 //dealer detail
 .dealership_details {
+  &:hover{
+    .dealer-icon{
+      box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+      transition: all ease .2s;
+      transform: scale(1.1);
+    }
+  }
   .dealer-icon {
     width: 82px;
     height: 82px;
     background-color: #0fbbbb;
     display: flex;
     align-items: center;
-	justify-content: center;
-	border-radius: 50%;
+    justify-content: center;
+    border-radius: 50%;
     margin: 0 auto 20px;
+    transition: all ease .2s;
   }
 
   h5 {
