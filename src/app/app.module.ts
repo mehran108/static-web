@@ -21,6 +21,8 @@ import { FooterComponent } from 'src/components/footer/footer.component';
 import { UpcomingKallarKaharComponent } from 'src/components/upcoming-kallar-kahar/upcoming-kallar-kahar.component';
 import { UpcomingSupremeCityComponent } from 'src/components/upcoming-supreme-city/upcoming-supreme-city.component';
 import { NgxImageZoomModule } from 'ngx-image-zoom';
+// import third-party module
+import { AnimateOnScrollModule } from 'ngx-animate-on-scroll';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,7 @@ import { NgxImageZoomModule } from 'ngx-image-zoom';
     ThreeSixtyModule,
     LightboxModule,
     NgxCaptchaModule,
+    AnimateOnScrollModule.forRoot(),
     NgxImageZoomModule // <-- Add this line
 
   ],
