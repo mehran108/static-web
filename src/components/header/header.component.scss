@@ -63,6 +63,7 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
+          transition: all ease .3s;
           @media (min-width: 768px) {
             padding: 15px 0;
             width: 230px;
@@ -73,6 +74,8 @@
           &:hover {
             color: #000;
             font-weight: 900;
+            font-size: 22px;
+            transition: all ease .3s;
             .arrow-black{
               display: block;
             }
@@ -149,8 +152,13 @@
                   font-size: 14px;
                   width: 200px;
                   padding: 6px 0;
+                  transition: all ease .3s;
                   @media (min-width: 768px) {
                     padding: 10px 0;
+                  }
+                  &:hover{
+                    font-size: 16px;
+                    transition: all ease .3s;
                   }
                 }
                 >ul {

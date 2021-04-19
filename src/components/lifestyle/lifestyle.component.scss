@@ -8,10 +8,27 @@
         padding-left: 80px;
         padding-right: 20px;
     }
+    &:hover{
+        &.green{
+            .lifestyle-intro{
+                background-color: #234047;
+                transition: all ease .3s;
+            }
+        }
+    }
+    &:hover{
+        &.grey{
+            .lifestyle-intro{
+                background-color: #1faaae;
+                transition: all ease .3s;
+            }
+        }
+    }
     &.green {
         background-color: #095151;
         .lifestyle-intro {
             background-color: rgba($color: #234047, $alpha: 0.9);
+            transition: all ease .3s;
             color: #fff;
             right: 100px;
             @media (max-width: 767px) {
@@ -28,6 +45,7 @@
         background-color: #ebebeb;
         .lifestyle-intro {
             background-color: rgba($color: #1faaae, $alpha: 0.9);
+            transition: all ease .3s;
             color: #022020;
             left: 100px;
             @media (max-width: 767px) {
