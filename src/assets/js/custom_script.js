@@ -1,7 +1,7 @@
 //custom js
-$(document).ready(function () {
+$(function () {
   $(this).scrollTop(0);
-  $("#open-side").click(function (e) {
+  $(document).on("click","#open-side",function (e) {
     e.stopPropagation();
     $(".wrapper").fadeIn("slow");
     $(".wrapper").addClass("active");
@@ -9,13 +9,13 @@ $(document).ready(function () {
     $('.overlay').addClass('active');
     $(".menu-btn").removeClass("menu-inactive");
   });
-  $("#open-side1").click(function (e) {
+  $(document).on("click","#open-side1",function (e) {
     e.stopPropagation();
     $(".wrapper").fadeIn("slow");
     $(".wrapper").addClass("active");
     $('.overlay').addClass('active');
   });
-  $("#close-side").click(function () {
+  $(document).on("click","#close-side",function () {
     $(".wrapper").fadeOut("slow");
     $(".wrapper").removeClass("active");
     $(".menu-btn").removeClass("menu-active");
@@ -76,7 +76,7 @@ $(document).ready(function () {
 // });
 
 //header-overlay
-$(document).click(function () {
+$(document).on("click",function () {
   if (($(".wrapper").hasClass("active")) && ($(".overlay").hasClass("active"))) {
     $(".wrapper").fadeOut("slow");
     $('.overlay').removeClass('active');
