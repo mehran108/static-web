@@ -25,6 +25,15 @@ import { CoreValuesComponent } from 'src/components/about/core-values/core-value
 import { JobSeekersComponent } from 'src/components/job-seekers/job-seekers.component';
 import { ApplyNowComponent } from 'src/components/job-seekers/apply-now/apply-now.component';
 import { JobsPinkComponent } from 'src/components/job-seekers/jobs-pink/jobs-pink.component';
+import { AngularFireStorageModule, BUCKET } from '@angular/fire/storage';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,16 +56,24 @@ import { JobsPinkComponent } from 'src/components/job-seekers/jobs-pink/jobs-pin
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
     NgxAnimationsModule,
     AppRoutingModule,
     ThreeSixtyModule,
     LightboxModule,
     NgxCaptchaModule,
-    NgxImageZoomModule // <-- Add this line
+    NgxImageZoomModule,
+    FormsModule,
+    ReactiveFormsModule // <-- Add this line
 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [],
+  providers: [
+    { provide: BUCKET, useValue: 'gs://fitness-application-f9bd9.appspot.com/' },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
