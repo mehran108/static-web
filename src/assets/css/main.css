@@ -89,7 +89,7 @@ hr {
 .alignnone { margin: 0 20px 0 0;}
 .aligncenter { margin: 0 20px 0 0;}
 
-.wp-caption { background: #FFFFFFF; border: 1px solid #F0F0F0; max-width: 96%;  padding: 8px 3px 10px; text-align: center; }
+.wp-caption { background: #FFFF; border: 1px solid #F0F0F0; max-width: 96%;  padding: 8px 3px 10px; text-align: center; }
 .wp-caption.alignnone { margin: 5px 20px 20px 0; }
 .wp-caption.aligncenter { margin: 5px 10px 20px 10px; }
 .wp-caption.alignleft { margin: 5px 20px 20px 0; float:left;}
@@ -295,8 +295,11 @@ hr {
 	background: none;
 	z-index: 1001;
 }
+#navigation ul > li:hover .children{
+	display: block !important;
+}
 
-#navigation ul > li.hover.submenu {
+#navigation ul > li:hover {
 	padding-bottom: 8px;
 }
 
@@ -346,11 +349,11 @@ hr {
 
 #navigation ul > li ul li a {
     display: block;
-    padding: 7px 25px 7px 7px;
+    padding: 7px 7px 7px 7px;
     font-size: 14px;
-	line-height: 17px;
-	float: none;
-	width: 138px;
+    line-height: 17px;
+    float: none;
+    width: 100%;
 }
 
 #navigation ul > li ul li.submenu a {
@@ -669,10 +672,13 @@ hr {
 #homepage-features ul {
 	margin: 0;
 	overflow: hidden;
+	display: flex;
+    flex-wrap: wrap;
 } 
 
 #homepage-features li {
-    width: 315px;
+	flex: 0 0 50%;
+	width: 50%;
     float: left;
     display: block;
     margin: 0 0 15px 0;

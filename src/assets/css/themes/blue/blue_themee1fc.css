@@ -93,8 +93,8 @@ hr {
 
 /************** Navigation **************/
 
-#navigation ul > li.hover.submenu {
-    background: url(images/nav_submenu_hover.png) no-repeat bottom center;
+#navigation ul > li:hover {
+    background: url("../../../../assets/pinnacle-images/nav_submenu_hover.png") no-repeat bottom center;
 }
 
 #navigation > ul > li > a {
