@@ -25,6 +25,8 @@ import { CoreValuesComponent } from 'src/components/about/core-values/core-value
 import { JobSeekersComponent } from 'src/components/job-seekers/job-seekers.component';
 import { ApplyNowComponent } from 'src/components/job-seekers/apply-now/apply-now.component';
 import { JobsPinkComponent } from 'src/components/job-seekers/jobs-pink/jobs-pink.component';
+// Import your library
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +54,7 @@ import { JobsPinkComponent } from 'src/components/job-seekers/jobs-pink/jobs-pin
     ThreeSixtyModule,
     LightboxModule,
     NgxCaptchaModule,
+    SlickCarouselModule,
     NgxImageZoomModule // <-- Add this line
 
   ],

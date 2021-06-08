@@ -39,35 +39,35 @@
                 routerLinkActive="router-link-active">Services</a>
               <ul class='children'>
                 <li class="page_item page-item-60"><a routerLink="/candidate-selection"
-                  routerLinkActive="router-link-active">Candidate
+                    routerLinkActive="router-link-active">Candidate
                     Selection</a></li>
-                <li class="page_item page-item-65"><a routerLink="/why-choose"
-                  routerLinkActive="router-link-active">Why Choose
+                <li class="page_item page-item-65"><a routerLink="/why-choose" routerLinkActive="router-link-active">Why
+                    Choose
                     Capital Source</a></li>
                 <li class="page_item page-item-67"><a routerLink="/what-you-save"
-                  routerLinkActive="router-link-active">What You Save</a></li>
+                    routerLinkActive="router-link-active">What You Save</a></li>
               </ul>
             </li>
-            <li class="page_item page-item-113 page_item_has_children"><a  routerLink="/about"
-              routerLinkActive="router-link-active">About Us</a>
+            <li class="page_item page-item-113 page_item_has_children"><a routerLink="/about"
+                routerLinkActive="router-link-active">About Us</a>
               <ul class='children'>
                 <li class="page_item page-item-115"><a routerLink="/our-company"
-                  routerLinkActive="router-link-active">Our Company</a></li>
+                    routerLinkActive="router-link-active">Our Company</a></li>
                 <li class="page_item page-item-124"><a routerLink="/core-values"
-                  routerLinkActive="router-link-active">Core Values
+                    routerLinkActive="router-link-active">Core Values
                     and Philosophy</a></li>
               </ul>
             </li>
             <li class="page_item page-item-138 page_item_has_children"><a routerLink="/job-seeker"
-              routerLinkActive="router-link-active">Job Seekers</a>
+                routerLinkActive="router-link-active">Job Seekers</a>
               <ul class='children'>
                 <li class="page_item page-item-148"><a href="job-seekers/apply-now/index.html">Apply Now</a></li>
                 <li class="page_item page-item-225"><a routerLink="/jobs-pink"
-                  routerLinkActive="router-link-active">Jobs Pink</a></li>
+                    routerLinkActive="router-link-active">Jobs Pink</a></li>
               </ul>
             </li>
-            <li class="page_item page-item-160"><a routerLink="/contact"
-              routerLinkActive="router-link-active">Contact Us</a></li>
+            <li class="page_item page-item-160"><a routerLink="/contact" routerLinkActive="router-link-active">Contact
+                Us</a></li>
           </ul>
         </nav>
 
@@ -82,6 +82,13 @@
         </ul>
       </section>
       <!-- Slider -->
+      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+        (beforeChange)="beforeChange($event)">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <img src="{{ slide.img }}" alt="" width="100%">
+        </div>
+      </ngx-slick-carousel>
       <!-- <div id="Offer_slider">
 
         <ul id="os_cycle" class="slides">
