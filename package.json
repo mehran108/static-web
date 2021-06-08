@@ -25,7 +25,7 @@
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "marzipano": "^0.10.1",
-    "ngx-animate-on-scroll": "^1.0.0",
+    "ngx-animations": "^5.0.4",
     "ngx-captcha": "^8.0.1",
     "ngx-image-zoom": "^0.6.0",
     "ngx-lightbox": "^2.2.2",

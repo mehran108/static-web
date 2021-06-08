@@ -3,15 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from 'src/components/about/about.component';
 import { ContactComponent } from 'src/components/contact/contact.component';
 import { DealershipComponent } from 'src/components/dealership/dealership.component';
-import { LifestyleComponent } from 'src/components/lifestyle/lifestyle.component';
-import { ProjectOverviewComponent } from 'src/components/project-overview/project-overview.component';
 import { ServiceComponent } from 'src/components/service/service.component';
 import { HomeComponent } from 'src/components/home/home.component';
-import { ProjectAlraziqComponent } from 'src/components/project-alraziq/project-alraziq.component';
-import { ProjectUpcomingComponent } from 'src/components/project-upcoming/project-upcoming.component';
-import { PanoramaImageRendererComponent } from 'src/components/project-overview/panorama-image-renderer/panorama-image-renderer.component';
-import { UpcomingKallarKaharComponent } from 'src/components/upcoming-kallar-kahar/upcoming-kallar-kahar.component';
-import { UpcomingSupremeCityComponent } from 'src/components/upcoming-supreme-city/upcoming-supreme-city.component';
+import { CandidateSelectionComponent } from 'src/components/service/candidate-selection/candidate-selection.component';
+import { WhyChooseComponent } from 'src/components/service/why-choose/why-choose.component';
+import { WhatYouSaveComponent } from 'src/components/service/what-you-save/what-you-save.component';
+import { OurCompanyComponent } from 'src/components/about/our-company/our-company.component';
+import { CoreValuesComponent } from 'src/components/about/core-values/core-values.component';
+import { JobSeekersComponent } from 'src/components/job-seekers/job-seekers.component';
+import { ApplyNowComponent } from 'src/components/job-seekers/apply-now/apply-now.component';
+import { JobsPinkComponent } from 'src/components/job-seekers/jobs-pink/jobs-pink.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,14 +20,15 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'dealership', component: DealershipComponent },
-  { path: 'lifestyle', component: LifestyleComponent },
-  { path: 'project', component: ProjectOverviewComponent },
+  { path: 'candidate-selection', component: CandidateSelectionComponent },
+  { path: 'why-choose', component: WhyChooseComponent },
   { path: 'service', component: ServiceComponent },
-  { path: 'alraziq', component: ProjectAlraziqComponent },
-  { path: 'upcoming', component: ProjectUpcomingComponent },
-  { path: 'panorama', component: PanoramaImageRendererComponent },
-  { path: 'kallar-kahar', component: UpcomingKallarKaharComponent },
-  { path: 'supreme-city', component: UpcomingSupremeCityComponent }
+  { path: 'what-you-save', component: WhatYouSaveComponent },
+  { path: 'our-company', component: OurCompanyComponent },
+  { path: 'core-values', component: CoreValuesComponent },
+  { path: 'job-seeker', component: JobSeekersComponent },
+  { path: 'apply-now', component: ApplyNowComponent },
+  { path: 'jobs-pink', component: JobsPinkComponent }
 ];
 
 @NgModule({
