@@ -27,6 +27,15 @@ import { ApplyNowComponent } from 'src/components/job-seekers/apply-now/apply-no
 import { JobsPinkComponent } from 'src/components/job-seekers/jobs-pink/jobs-pink.component';
 // Import your library
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { AngularFireStorageModule, BUCKET } from '@angular/fire/storage';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,17 +58,25 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
     NgxAnimationsModule,
     AppRoutingModule,
     ThreeSixtyModule,
     LightboxModule,
     NgxCaptchaModule,
     SlickCarouselModule,
-    NgxImageZoomModule // <-- Add this line
+    NgxImageZoomModule,
+    FormsModule,
+    ReactiveFormsModule // <-- Add this line
 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [],
+  providers: [
+    { provide: BUCKET, useValue: 'gs://fitness-application-f9bd9.appspot.com/' },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
