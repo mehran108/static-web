@@ -1,68 +1,67 @@
 <header id="Header">
   <div class="header_overlay">
-    <div class="Wrapper">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <a id="logo" class="navbar-brand" href="index.html"> <!-- <img src="assets/logo.jpg" alt="Capital Source Corporation" /> --></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span></span>
+         <span></span>
+         <span></span>
+        </button>
 
-      <!-- Top -->
-      <div class="top">
-
-        <h1> <a id="logo" href="index.html" title="Capital Source Corporation">
-            <img src="assets/logo.jpg" alt="Capital Source Corporation" />
-          </a>
-        </h1>
-        <div class="top_options">
-
-          <!-- Top links -->
-          <ul class="top_links">
-          </ul>
-          <!-- Call us -->
-          <div class="call_us">
-            <span>(416) </span>645-1667
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="top">
+            <div class="top_options">
+              <!-- Call us -->
+              <div class="call_us">
+                <span>(416) </span>645-1667
+              </div>
+            </div>
+            <!-- Navigation -->
+            <nav id="navigation">
+              <ul>
+                <li class="page_item page-item-14 current_page_item"><a routerLink="/" aria-current="page">Home</a></li>
+                <li class="page_item page-item-58 page_item_has_children"><a routerLink="/service"
+                    routerLinkActive="router-link-active">Services</a>
+                  <ul class='children'>
+                    <li class="page_item page-item-60"><a routerLink="/candidate-selection"
+                        routerLinkActive="router-link-active">Candidate
+                        Selection</a></li>
+                    <li class="page_item page-item-65"><a routerLink="/why-choose" routerLinkActive="router-link-active">Why
+                        Choose
+                        Capital Source</a></li>
+                    <li class="page_item page-item-67"><a routerLink="/what-you-save"
+                        routerLinkActive="router-link-active">What You Save</a></li>
+                  </ul>
+                </li>
+                <li class="page_item page-item-113 page_item_has_children"><a routerLink="/about"
+                    routerLinkActive="router-link-active">About Us</a>
+                  <ul class='children'>
+                    <li class="page_item page-item-115"><a routerLink="/our-company"
+                        routerLinkActive="router-link-active">Our Company</a></li>
+                    <li class="page_item page-item-124"><a routerLink="/core-values"
+                        routerLinkActive="router-link-active">Core Values
+                        and Philosophy</a></li>
+                  </ul>
+                </li>
+                <li class="page_item page-item-138 page_item_has_children"><a routerLink="/job-seeker"
+                    routerLinkActive="router-link-active">Job Seekers</a>
+                  <ul class='children'>
+                    <li class="page_item page-item-148"><a routerLink="/apply-now">Apply Now</a></li>
+                    <li class="page_item page-item-225"><a routerLink="/jobs-pink"
+                        routerLinkActive="router-link-active">Jobs Pink</a></li>
+                  </ul>
+                </li>
+                <li class="page_item page-item-160"><a routerLink="/contact" routerLinkActive="router-link-active">Contact
+                    Us</a></li>
+              </ul>
+            </nav>
           </div>
-
-
         </div>
+      </nav>
+      <!-- Top -->
 
-        <!-- Navigation -->
-        <nav id="navigation">
-          <ul>
-            <li class="page_item page-item-14 current_page_item"><a routerLink="/" aria-current="page">Home</a></li>
-            <li class="page_item page-item-58 page_item_has_children"><a routerLink="/service"
-                routerLinkActive="router-link-active">Services</a>
-              <ul class='children'>
-                <li class="page_item page-item-60"><a routerLink="/candidate-selection"
-                    routerLinkActive="router-link-active">Candidate
-                    Selection</a></li>
-                <li class="page_item page-item-65"><a routerLink="/why-choose" routerLinkActive="router-link-active">Why
-                    Choose
-                    Capital Source</a></li>
-                <li class="page_item page-item-67"><a routerLink="/what-you-save"
-                    routerLinkActive="router-link-active">What You Save</a></li>
-              </ul>
-            </li>
-            <li class="page_item page-item-113 page_item_has_children"><a routerLink="/about"
-                routerLinkActive="router-link-active">About Us</a>
-              <ul class='children'>
-                <li class="page_item page-item-115"><a routerLink="/our-company"
-                    routerLinkActive="router-link-active">Our Company</a></li>
-                <li class="page_item page-item-124"><a routerLink="/core-values"
-                    routerLinkActive="router-link-active">Core Values
-                    and Philosophy</a></li>
-              </ul>
-            </li>
-            <li class="page_item page-item-138 page_item_has_children"><a routerLink="/job-seeker"
-                routerLinkActive="router-link-active">Job Seekers</a>
-              <ul class='children'>
-                <li class="page_item page-item-148"><a routerLink="/apply-now">Apply Now</a></li>
-                <li class="page_item page-item-225"><a routerLink="/jobs-pink"
-                    routerLinkActive="router-link-active">Jobs Pink</a></li>
-              </ul>
-            </li>
-            <li class="page_item page-item-160"><a routerLink="/contact" routerLinkActive="router-link-active">Contact
-                Us</a></li>
-          </ul>
-        </nav>
-
-      </div>
       <section class="subpage_header">
         <div [ngSwitch]="router.url">
           <ng-container *ngSwitchCase="'/service'">
@@ -167,7 +166,16 @@
         [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)"
         (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-          <img src="{{ slide.img }}" alt="" width="100%">
+          <div class="slider-wrapper">
+            <div class="slide-info">
+              <h2>Only <span>The Best</span></h2>
+              <p>Capital Source manages to provide only the best; from top quality candidates to exceptional service.
+                Why settle for less? Learn how Capital Source can help your business with professional solutions at
+                competitive rates, call us today.</p>
+              <a href="#" class="button-big button-big-orange"><span>Learn More</span></a>
+            </div>
+            <img src="{{ slide.img }}" alt="" class="img-fluid">
+          </div>
         </div>
       </ngx-slick-carousel>
       <!-- <div id="Offer_slider">

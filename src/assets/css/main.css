@@ -44,7 +44,6 @@ body {
 	font-size: 13px;
 	line-height: 21px;
 	height: 100%;
-	min-width:950px;
 }
 
 .Wrapper {
@@ -101,7 +100,6 @@ hr {
 
 /************ Grid system ***********/
 
-.row { margin-bottom: 15px; width:100%; }
 
 	.show_cols .col { background: #e8e8e8; text-align: center; }
 	.show_cols .row:hover .col { background: #c2c2c2; }
@@ -561,12 +559,19 @@ hr {
 }
 
 #Content p { 
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+#Content .margin{
 	margin-bottom: 15px;
 }
 
-.left_submenu .sidebar {
-	width: 210px; margin-right: 20px; float: left; overflow:hidden;
+.wpcf7-form-control-wrap{
+	display: block;
+	margin-bottom: 15px;
 }
+
 
 .right_submenu .sidebar {
 	width: 210px; margin-left: 20px; float: left; overflow:hidden;
@@ -576,9 +581,7 @@ hr {
 	margin-left: 10px;
 }
 
-.with_aside .content {
-	width: 710px; float: left;
-}
+
 
 /************** Homepage boxes **************/
 
@@ -672,13 +675,9 @@ hr {
 #homepage-features ul {
 	margin: 0;
 	overflow: hidden;
-	display: flex;
-    flex-wrap: wrap;
 } 
 
 #homepage-features li {
-	flex: 0 0 50%;
-	width: 50%;
     float: left;
     display: block;
     margin: 0 0 15px 0;
@@ -1559,13 +1558,6 @@ hr {
 	overflow: hidden;
 }
 
-.contact .about {
-	width: 610px;
-	padding: 0 10px;
-	float: left;
-	margin-right: 30px;
-}
-
 .contact .details {
 	overflow: hidden;
 }
@@ -1605,17 +1597,17 @@ hr {
 }
 
 .contact .contact_form .nick_ico {
-	left: 13px;
+	left: 30px;
 	top: 11px;
 }
 
 .contact .contact_form .email_ico {
-	left: 327px;
+	left: 30px;
 	top: 11px;
 }
 
 .contact .contact_form input[type="text"] {
-	width: 254px;
+	width: 100%;
 	float: left;
 	margin-bottom: 14px;
 	padding-left: 36px;
@@ -1626,7 +1618,7 @@ hr {
 }
 
 .contact .contact_form textarea {
-	width: 596px;
+	width: 100%;
 	clear: both;
 	margin-bottom: 14px;
 	height: 150px;
@@ -1657,7 +1649,7 @@ form input, form select, textarea {
 	font-family: 'PT Sans', Verdana, Tahoma, Arial, sans-serif;
 }
 
-form input[type="text"], form input[type="password"], form select, textarea {	
+form input[type="text"], form input[type="email"], form input[type="date"], form input[type="password"], form select, textarea {	
 	font-size: 13px;
 	margin: 0;
 	padding: 8px 6px;

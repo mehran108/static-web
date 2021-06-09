@@ -1,79 +1,59 @@
 <div id="Content">
-  <div class="Wrapper">
+  <div class="container">
 
-    <div class="content contact contact_no_map">
+    <div class="row contact">
+      <div class="col-md-6">
+        <img loading="lazy" class="size-full wp-image-182 alignright" title="Contact"
+          src="http://capitalsource.ca/wp-content/uploads/2012/07/contact.png" alt="" width="709" height="166"
+          srcset="https://capitalsource.ca/wp-content/uploads/2012/07/contact.png 709w, https://capitalsource.ca/wp-content/uploads/2012/07/contact-300x70.png 300w, https://capitalsource.ca/wp-content/uploads/2012/07/contact-530x124.png 530w, https://capitalsource.ca/wp-content/uploads/2012/07/contact-120x28.png 120w"
+          sizes="(max-width: 709px) 100vw, 709px" class="img-fluid">
+      </div>
 
-      <div class="about">
-
-
-        <h4><img loading="lazy" class="size-full wp-image-182 alignright" title="Contact"
-            src="http://capitalsource.ca/wp-content/uploads/2012/07/contact.png" alt="" width="709" height="166"
-            srcset="https://capitalsource.ca/wp-content/uploads/2012/07/contact.png 709w, https://capitalsource.ca/wp-content/uploads/2012/07/contact-300x70.png 300w, https://capitalsource.ca/wp-content/uploads/2012/07/contact-530x124.png 530w, https://capitalsource.ca/wp-content/uploads/2012/07/contact-120x28.png 120w"
-            sizes="(max-width: 709px) 100vw, 709px"></h4>
-        <h4></h4>
-        <h4></h4>
-        <h4></h4>
-        <h4></h4>
-        <h4></h4>
-        <h4></h4>
+      <div class="col-md-6 margin-bottom">
         <h4>We look forward to hearing from you</h4>
         <p>In pursuance to achieve an excellent relationship with our clients, whether it’d be a job seeker or employer,
           communication is the primary principle on which it is established. Give us a call or email and we’ll find a
           way to help you. </p>
-        <h4>24/7 Customer Service.</h4>
-        <div class="col one_fourth">
-          <p><strong>Address:</strong></p>
-          <ul>
-            <li>400 Canarctic Drive,</li>
-            <li>Toronto, ON</li>
-            <li>M3J 2V3</li>
-          </ul>
-        </div>
-
-        <div class="col one_fourth">
-          <ul>
-            <li><strong>Phone:</strong> 416-645-1667</li>
-            <li><strong>Fax:</strong> 416-665-2223</li>
-            <li><strong>Toll Free:</strong> 1-866-255-3015</li>
-            <li><strong>Email:</strong>&nbsp;info@capitalsource.ca</li>
-          </ul>
-        </div>
-
-        <div class="col two_fourth">
-
-          <style>
-            #wpgmza_map img {
-              max-width: none !important;
-            }
-
-          </style>
-          <div id="wpgmza_map" style="display:block; width:455px; height:150px; float:left;">&nbsp;</div>
-
-
-
-        </div>
-
-        <p>&nbsp;</p>
-        <hr>
-        <h4>Send us a question:</h4>
-        <div class="contact_form">
-          <form id="json_contact_form" method="POST"
-            action="https://capitalsource.ca/wp-content/themes/doover/functions/theme-mail.php">
-            <input type="hidden" name="To" value="info@capitalsource.ca">
-            <input type="hidden" name="Subject" value="[contact form] Capital Source Corporation">
-
-            <fieldset>
-              <span class="nick_ico"></span>
-              <span class="email_ico"></span>
-              <input id="Name" class="nick required" name="Name" placeholder="Your name" type="text">
-              <input id="Email" class="email required" name="Email" placeholder="Your e-mail" type="text">
-              <textarea id="Message" name="Message" class="required"></textarea>
-              <input type="submit" value="Send message">
-            </fieldset>
-          </form>
-        </div>
-
       </div>
+      <div class="col-12 margin-bottom">
+        <h4>24/7 Customer Service.</h4>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Address:</strong></p>
+        <ul>
+          <li>400 Canarctic Drive,</li>
+          <li>Toronto, ON</li>
+          <li>M3J 2V3</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <ul>
+          <li><strong>Phone:</strong> 416-645-1667</li>
+          <li><strong>Fax:</strong> 416-665-2223</li>
+          <li><strong>Toll Free:</strong> 1-866-255-3015</li>
+          <li><strong>Email:</strong>&nbsp;info@capitalsource.ca</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="col-12">
+        <h4>Send us a question:</h4>
+      </div>
+      <form id="json_contact_form" method="POST" class="row contact_form"
+        action="https://capitalsource.ca/wp-content/themes/doover/functions/theme-mail.php">
+        <div class="form-group col-md-6">
+          <span class="nick_ico"></span>
+          <input id="Name" class="nick required" name="Name" placeholder="Your name" type="text">
+        </div>
+        <div class="form-group col-md-6">
+          <span class="email_ico"></span>
+          <input id="Email" class="email required" name="Email" placeholder="Your e-mail" type="text">
+        </div>
+        <div class="form-group col-12">
+          <textarea id="Message" name="Message" class="required"></textarea>
+          <input type="submit" value="Send message">
+        </div>
+      </form>
 
 
 

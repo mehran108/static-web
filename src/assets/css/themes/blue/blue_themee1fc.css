@@ -68,6 +68,8 @@ hr {
 
 #Header {
     background: #09234e url(images/header_bg.png) no-repeat center top;
+	padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 #Header .header_overlay {
@@ -95,6 +97,12 @@ hr {
 
 #navigation ul > li:hover {
     background: url("../../../../assets/pinnacle-images/nav_submenu_hover.png") no-repeat bottom center;
+}
+
+@media (max-width: 991px){
+	#navigation ul > li:hover {
+		background: none;
+	}
 }
 
 #navigation > ul > li > a {
@@ -568,13 +576,14 @@ a.call_to_action_contact {
 
 /************** Forms **************/
 
-form input[type="text"], form input[type="password"], form select, textarea {
+form input[type="text"], form input[type="email"], form input[type="date"], form input[type="password"], form select, textarea {
 	border-top: 1px solid #b2b2b2;
 	border-left: 1px solid #b2b2b2;
 	border-right: 1px solid #d6d6d6;
 	border-bottom: 1px solid #d6d6d6;
 	background: #f3f3f3 url(images/input_bg.png) repeat-x;
 	color: #868686;
+	width: 100%;
 }
 
 form input[type="text"]:focus, form input[type="password"]:focus, form select:focus, textarea:focus {
