@@ -70,6 +70,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SlickCarouselModule,
     NgxImageZoomModule,
     FormsModule,
+    // AgGridModule.withComponents(),
+    // AgGridModule.forRoot(),
     ReactiveFormsModule // <-- Add this line
 
   ],

@@ -28,7 +28,8 @@ const routes: Routes = [
   { path: 'core-values', component: CoreValuesComponent },
   { path: 'job-seeker', component: JobSeekersComponent },
   { path: 'apply-now', component: ApplyNowComponent },
-  { path: 'jobs-pink', component: JobsPinkComponent }
+  { path: 'jobs-pink', component: JobsPinkComponent },
+  { path: 'admin', loadChildren: () => import('../components/admin/admin.module').then(m => m.AdminModule) }
 ];
 
 @NgModule({
