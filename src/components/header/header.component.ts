@@ -81,7 +81,7 @@ export class HeaderComponent implements OnInit {
     {img: "http://placehold.it/350x150/333333"},
     {img: "http://placehold.it/350x150/666666"}
   ];
-  slideConfig = {"slidesToShow": 1, "slidesToScroll": 1, arrows: false, autoplay: true};
+  slideConfig = {"slidesToShow": 1, "slidesToScroll": 1, arrows: false, autoplay: false};
 
   addSlide() {
     this.slides.push({img: "http://placehold.it/350x150/777777"})

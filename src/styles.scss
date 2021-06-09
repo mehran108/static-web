@@ -4,3 +4,19 @@
 @import './assets/css/animate.css';
 
 @import 'assets/style.css';
+@import './assets/css/styles.css';
+
+.margin-bottom{
+    margin-bottom: 30px !important;
+}
+@media (max-width: 767px){
+    .slider-wrapper{
+        flex-direction: column-reverse;
+        .slide-info{
+            padding: 20px;
+        }
+    }
+    .subpage_header h1{
+        font-size: 50px;
+    }
+}

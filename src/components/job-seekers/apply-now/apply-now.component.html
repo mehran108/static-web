@@ -1,63 +1,60 @@
 <div id="Content">
-  <div class="Wrapper">
+  <div class="container">
 
-    <div class="content">
-      <div id="post-148" class="post-148 page type-page status-publish hentry">
+    <div class="row">
+      <div class="col-12">
         <h3>Get the job you want. Let us help you.</h3>
-        &nbsp;
-        <div class="col one_third">
+      </div>
+
+      &nbsp;
+      <div class="row">
+        <div class="col-md-3">
           <img loading="lazy" class="alignnone size-full wp-image-155" title="Apply"
             src="../../wp-content/uploads/2012/07/sidebanner1.png" alt="" width="300" height="600"
             srcset="https://capitalsource.ca/wp-content/uploads/2012/07/sidebanner1.png 300w, https://capitalsource.ca/wp-content/uploads/2012/07/sidebanner1-150x300.png 150w, https://capitalsource.ca/wp-content/uploads/2012/07/sidebanner1-185x370.png 185w, https://capitalsource.ca/wp-content/uploads/2012/07/sidebanner1-30x60.png 30w, https://capitalsource.ca/wp-content/uploads/2012/07/sidebanner1-157x315.png 157w"
-            sizes="(max-width: 300px) 100vw, 300px" />
+            sizes="(max-width: 300px) 100vw, 300px" class="img-fluid" />
         </div>
-
-        <div class="col two_third">
+        <div class="col-md-9">
           <div class="info">Below is an application to apply for a job. Whenever we have an opening, we will contact
             you. If you have any questions please <a title="Contact" href="../../contact-us/index.html">contact us</a>.
           </div>
-
-          <div role="form" class="wpcf7" id="wpcf7-f150-p148-o1" dir="ltr">
-            <div class="screen-reader-response">
-              <p role="status" aria-live="polite" aria-atomic="true">
-              <ul></ul>
-            </div>
-            <form [formGroup]="fg" class="wpcf7-form init">
-              <div style="display: none;">
-                <input type="hidden" name="_wpcf7" value="150" />
-                <input type="hidden" name="_wpcf7_version" value="5.3.2" />
-                <input type="hidden" name="_wpcf7_locale" value="" />
-                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f150-p148-o1" />
-                <input type="hidden" name="_wpcf7_container_post" value="148" />
-                <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-              </div>
+          <form [formGroup]="fg" class="row wpcf7-form init">
+            <div class="form-group col-md-6">
               <p>First Name (required)</p>
               <span class="wpcf7-form-control-wrap your-fname">
                 <input formControlName="firstName" type="text" name="your-fname" value="" size="40"
                   class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
                   aria-invalid="false" />
               </span>
-
+            </div>
+            <div class="form-group col-md-6">
               <p>Middle Name</p>
               <span class="wpcf7-form-control-wrap your-mname">
                 <input formControlName="middleName" type="text" name="your-mname" value="" size="40"
                   class="wpcf7-form-control wpcf7-text" aria-invalid="false" />
               </span>
+            </div>
 
+
+            <div class="form-group col-md-6">
               <p>Last Name (required)</p>
               <span class="wpcf7-form-control-wrap your-lname">
                 <input formControlName="lastName" type="text" name="your-lname" value="" size="40"
                   class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
                   aria-invalid="false" />
               </span>
+            </div>
 
+            <div class="form-group col-md-6">
               <p>Date of birth DD/MM/YYYY (required)</p>
               <span class="wpcf7-form-control-wrap your-dob">
                 <input formControlName="birthDate" type="date" name="your-dob" value="" size="40"
                   class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
                   aria-invalid="false" />
               </span>
+            </div>
 
+            <div class="form-group col-md-6">
               <p>Gendre (required)</p>
               <span class="wpcf7-form-control-wrap Gendre">
                 <select formControlName="gender" name="Gendre"
@@ -67,21 +64,27 @@
                   <option value="Female">Female</option>
                 </select>
               </span>
+            </div>
 
+            <div class="form-group col-md-6">
               <p>Address (required)</p>
               <span class="wpcf7-form-control-wrap your-address">
                 <input formControlName="address" type="text" name="your-address" value="" size="40"
                   class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
                   aria-invalid="false" />
               </span>
+            </div>
 
+            <div class="form-group col-md-6">
               <p>Major Intersection (required)</p>
               <span class="wpcf7-form-control-wrap your-major">
                 <input formControlName="intersection" type="text" name="your-major" value="" size="40"
                   class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
                   aria-invalid="false" />
               </span>
+            </div>
 
+            <div class="form-group col-md-6">
               <p>Province </p>
               <span class="wpcf7-form-control-wrap Province">
                 <select formControlName="province" name="Province" class="wpcf7-form-control wpcf7-select"
@@ -100,42 +103,54 @@
                   <option value="Yukon">Yukon</option>
                   <option value="Nunavut">Nunavut</option>
                 </select></span>
+            </div>
 
+            <div class="form-group col-md-6">
               <p>City(required)</p>
               <span class="wpcf7-form-control-wrap your-city">
                 <input formControlName="city" type="text" name="your-city" value="" size="40"
                   class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
                   aria-invalid="false" />
               </span>
+            </div>
 
+            <div class="form-group col-md-6">
               <p>Postal Code(required)</p>
               <span class="wpcf7-form-control-wrap your-postal-code">
                 <input formControlName="postalCode" type="text" name="your-postal-code" value="" size="40"
                   class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
                   aria-invalid="false" />
               </span>
+            </div>
 
+            <div class="form-group col-md-6">
               <p>Email (required)</p>
               <span class="wpcf7-form-control-wrap your-email">
                 <input formControlName="email" type="email" name="your-email" value="" size="40"
                   class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
                   aria-required="true" aria-invalid="false" />
               </span>
+            </div>
 
+            <div class="form-group col-md-6">
               <p>Phone (required)</p>
               <span class="wpcf7-form-control-wrap your-phone">
                 <input formControlName="phone" type="text" name="your-phone" value="" size="40"
                   class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
                   aria-invalid="false" />
               </span>
+            </div>
 
+            <div class="form-group col-md-6">
               <p>Cell Phone(required)</p>
               <span class="wpcf7-form-control-wrap your-cphone">
                 <input formControlName="cell" type="text" name="your-cphone" value="" size="40"
                   class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
                   aria-invalid="false" />
               </span>
+            </div>
 
+            <div class="form-group col-md-6">
               <p>Do you have access to a vehicle? (required)</p>
               <span class="wpcf7-form-control-wrap Vehicle">
                 <select formControlName="ownVehicle" name="Vehicle"
@@ -145,9 +160,15 @@
                   <option value="No">No</option>
                 </select>
               </span>
+            </div>
 
+
+            <div class="col-12">
               <h4>Below, please check all applicable.</h4>
-              <p>Please Select Job Category (required):</p>
+            </div>
+
+            <div class="form-group col-12">
+              <p class="margin">Please Select Job Category (required):</p>
               <span class="wpcf7-form-control-wrap Category">
                 <span class="wpcf7-form-control wpcf7-checkbox">
                   <span class="wpcf7-list-item first">
@@ -165,8 +186,10 @@
                   </span>
                 </span>
               </span>
+            </div>
 
-              <p>Please Select Job Shift (required):
+            <div class="form-group col-12">
+              <p class="margin">Please Select Job Shift (required):
                 <span class="wpcf7-form-control-wrap Shift"><span class="wpcf7-form-control wpcf7-checkbox">
                     <span class="wpcf7-list-item first">
                       <input formControlName="jobShift" type="radio" name="jobShift" value="Morning" />
@@ -181,7 +204,9 @@
                     </span>
                   </span>
                 </span>
-              <p>Please Select Job Type (required):</p>
+            </div>
+            <div class="col-12 form-group">
+              <p class="margin">Please Select Job Type (required):</p>
               <span class="wpcf7-form-control-wrap JobType">
                 <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
                   <span class="wpcf7-list-item first">
@@ -242,31 +267,36 @@
                   </span>
                 </span>
               </span>
-              <p>Submit Your Resume here. Max. 5 MB</p>
+            </div>
+            <div class="col-12 form-group">
+              <p class="margin">Submit Your Resume here. Max. 5 MB</p>
               <span class="wpcf7-form-control-wrap SubmitResumes">
                 <input type="file" name="SubmitResumes" size="40" class="wpcf7-form-control wpcf7-file"
                   accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv"
                   aria-invalid="false" />
               </span>
+            </div>
 
-              <p>Additional Information:</p>
-              Please type a short description below.
+            <div class="col-12">
+              <p class="margin">Additional Information:</p>
+
+            </div>
+            <div class="col-12 form-group">
+              <p> Please type a short description below.</p>
               <span class="wpcf7-form-control-wrap add">
                 <textarea formControlName="additionalInfo" name="add" cols="40" rows="10"
                   class="wpcf7-form-control wpcf7-textarea" aria-invalid="false">
-                  </textarea>
+                      </textarea>
               </span>
 
-              <input (click) = "onSubmit()" type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" />
-              <div class="wpcf7-response-output" aria-hidden="true">
+              <input (click)="onSubmit()" type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" />
+            </div>
 
-              </div>
-            </form>
-          </div>
+          </form>
         </div>
-
       </div>
     </div>
 
   </div>
 </div>
+<app-footer></app-footer>
