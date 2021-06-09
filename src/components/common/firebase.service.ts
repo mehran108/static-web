@@ -7,7 +7,22 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class FirebaseService {
-  constructor(public router: Router, private firestore: AngularFirestore) {
+  public user = {};
+  constructor(public afAuth: AngularFireAuth, public router: Router, private firestore: AngularFirestore) {
+    this.afAuth.authState.subscribe(user => {
+      if (user) {
+        this.user = user;
+        localStorage.setItem('isLoggedin', JSON.stringify(this.user));
+      } else {
+        localStorage.setItem('isLoggedin', '');
+      }
+    });
+  }
+  async login(email: string, password: string) {
+    var result = await this.afAuth.signInWithEmailAndPassword(email, password)
+  }
+  async register(email: string, password: string) {
+    await this.afAuth.createUserWithEmailAndPassword(email, password)
   }
   // Employee CRUD Model
 
@@ -25,5 +40,8 @@ export class FirebaseService {
     return new Promise<any>((resolve, reject) => {
       this.firestore.doc(`Employee/${Employee.id}`).delete().then(res => resolve(res), error => reject(error));
     });
+  }
+  GetAllEmployee = () => {
+    return this.firestore.collection('Employee').snapshotChanges();
   }
 }

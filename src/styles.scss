@@ -2,7 +2,8 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import './assets/css/animate.css';
-
+@import "@ag-grid-community/all-modules/dist/styles/ag-grid.css";
+@import "@ag-grid-community/all-modules/dist/styles/ag-theme-material.css";
 @import 'assets/style.css';
 @import './assets/css/styles.css';
 
@@ -19,4 +20,32 @@
     .subpage_header h1{
         font-size: 50px;
     }
+}
+
+.ag-theme-material {
+  .ag-header {
+    background-color: #f3f3f3;
+
+    .ag-header-cell {
+      background-color: #f3f3f3;
+      border-right: none;
+    }
+
+    .ag-header-cell-label .ag-header-cell-text {
+      color: #232323;
+    }
+  }
+
+  .ag-header-group-text {
+    color: #232323;
+  }
+
+  .ag-icon {
+    color: blue;
+  }
+
+  .ag-header-viewport {
+    border-left: none;
+    border-bottom: 2px solid blue;
+  }
 }
