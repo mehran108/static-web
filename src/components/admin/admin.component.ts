@@ -32,7 +32,8 @@ export class AdminComponent implements OnInit {
       field: 'jobType'
     },
     {
-      field: 'gender'
+      field: 'gender',
+      width: 130
     },
     {
       field: 'intersection'
