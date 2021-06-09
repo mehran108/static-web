@@ -99,6 +99,11 @@ hr {
     background: url("../../../../assets/pinnacle-images/nav_submenu_hover.png") no-repeat bottom center;
 }
 
+#navigation ul > li:first-child:hover,
+#navigation ul > li:last-child:hover{
+	background: none;
+}
+
 @media (max-width: 991px){
 	#navigation ul > li:hover {
 		background: none;

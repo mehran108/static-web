@@ -1,0 +1,32 @@
+.employee-wrapper {
+  background: #09234e url("../../../assets/pinnacle-images/header_bg.png") no-repeat center top;
+  height: 100vh;
+  padding-top: 50px;
+
+  .form-group {
+    label {
+      color: #fff;
+
+      &.style {
+        border-top: 1px solid #b2b2b2;
+        border-left: 1px solid #b2b2b2;
+        border-right: 1px solid #d6d6d6;
+        border-bottom: 1px solid #d6d6d6;
+        background: #f3f3f3;
+        color: #868686;
+        font-size: 13px;
+        margin: 0;
+        padding: 8px 6px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        display: block;
+        height: 40px;
+      }
+    }
+  }
+  .btn{
+    color: #fff;
+    text-shadow: 1px 1px 0 #162e4d;
+    border: 1px solid #13325c;
+  }
+}

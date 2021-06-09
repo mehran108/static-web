@@ -510,12 +510,47 @@
   }
 
   .navbar-toggler {
+    &:focus {
+      outline: none;
+    }
+    &.cross-icon{
+      span {
+        &:nth-child(1) {
+          margin-top: 0px;
+          transform: rotate(135deg);
+          opacity: 0.9;
+        }
+        &:nth-child(2) {
+          height: 12px;
+          visibility: hidden;
+          background-color: transparent;
+        }
+        &:nth-child(3) {
+          margin-top: -27px;
+          transform: rotate(-135deg);
+          opacity: 0.9;
+        }
+      }
+    }
     span {
-      width: 30px;
-      height: 4px;
+      width: 32px;
+      height: 3px;
+      margin-bottom: 6px;
       background-color: #fff;
+      border-radius: 12px;
+      transform: rotate(0deg);
+      opacity: 1;
       display: block;
-      margin: 5px 0;
+      &:nth-child(1) {
+        transition: transform .35s ease-in-out;
+      }
+      &:nth-child(2) {
+        width: 22px;
+      }
+      &:nth-child(3) {
+        margin-bottom: 0;
+        transition: transform .35s ease-in-out;
+      }
     }
   }
 

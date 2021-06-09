@@ -1,5 +1,6 @@
-<div class="container-fluid">
-  <ag-grid-angular style="height: 100vh;" class="ag-theme-material" [gridOptions]="gridOptions"
+<div class="container-fluid list-wrapper">
+  <ag-grid-angular style="    height: 80vh;
+  width: 100%;" class="ag-theme-material" [gridOptions]="gridOptions"
     [columnDefs]="columnDefs" [defaultColDef] = "defaultColDef" [rowData]="employeeList" (gridReady)="onGridReady($event)" [modules]="modules" #grid>
   </ag-grid-angular>
 </div>

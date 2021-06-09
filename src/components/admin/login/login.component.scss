@@ -1,9 +1,13 @@
 .login-container {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  background: #09234e url("../../../assets/pinnacle-images/header_bg.png") no-repeat center top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .login-form-1 {
+  background-color: #fff;
   padding: 5%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
 }
