@@ -31,7 +31,9 @@
     "ngx-captcha": "^8.0.1",
     "ngx-image-zoom": "^0.6.0",
     "ngx-lightbox": "^2.2.2",
+    "ngx-slick-carousel": "^0.5.1",
     "rxjs": "~6.6.0",
+    "slick-carousel": "^1.8.1",
     "three": "^0.124.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
