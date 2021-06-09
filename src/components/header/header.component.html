@@ -6,23 +6,14 @@
       <div class="top">
 
         <h1> <a id="logo" href="index.html" title="Capital Source Corporation">
-            <img src="../../assets/pinnacle-images/logo6.png" alt="Capital Source Corporation" />
+            <img src="assets/logo.jpg" alt="Capital Source Corporation" />
           </a>
         </h1>
         <div class="top_options">
 
           <!-- Top links -->
           <ul class="top_links">
-
-
-
-
-
-
-
-
           </ul>
-
           <!-- Call us -->
           <div class="call_us">
             <span>(416) </span>645-1667
@@ -34,7 +25,7 @@
         <!-- Navigation -->
         <nav id="navigation">
           <ul>
-            <li class="page_item page-item-14 current_page_item"><a href="index.html" aria-current="page">Home</a></li>
+            <li class="page_item page-item-14 current_page_item"><a routerLink="/" aria-current="page">Home</a></li>
             <li class="page_item page-item-58 page_item_has_children"><a routerLink="/service"
                 routerLinkActive="router-link-active">Services</a>
               <ul class='children'>
@@ -61,7 +52,7 @@
             <li class="page_item page-item-138 page_item_has_children"><a routerLink="/job-seeker"
                 routerLinkActive="router-link-active">Job Seekers</a>
               <ul class='children'>
-                <li class="page_item page-item-148"><a  routerLink="/apply-now">Apply Now</a></li>
+                <li class="page_item page-item-148"><a routerLink="/apply-now">Apply Now</a></li>
                 <li class="page_item page-item-225"><a routerLink="/jobs-pink"
                     routerLinkActive="router-link-active">Jobs Pink</a></li>
               </ul>
@@ -73,18 +64,108 @@
 
       </div>
       <section class="subpage_header">
-
-        <h1>Services</h1>
-        <ul class="breadcrumbs">
-          <li class="home">You are here:</li>
-          <li><a href="https://capitalsource.ca">Home</a></li>
-          <li class="last"><a href="https://capitalsource.ca:443/services/">Services</a></li>
-        </ul>
+        <div [ngSwitch]="router.url">
+          <ng-container *ngSwitchCase="'/service'">
+            <h1>Services</h1>
+            <ul class="breadcrumbs">
+              <li class="home">You are here:</li>
+              <li><a routerLink="/">Home</a></li>
+              <li class="last"><a href="/service">Services</a></li>
+            </ul>
+          </ng-container>
+          <ng-container *ngSwitchCase="'/candidate-selection'">
+            <h1>Services</h1>
+            <ul class="breadcrumbs">
+              <li class="home">You are here:</li>
+              <li><a routerLink="/">Home</a></li>
+              <li><a href="/service">Services</a></li>
+              <li class="last"><a href="/candidate-selection">Candidate Selection</a></li>
+            </ul>
+          </ng-container>
+          <ng-container *ngSwitchCase="'/why-choose'">
+            <h1>Services</h1>
+            <ul class="breadcrumbs">
+              <li class="home">You are here:</li>
+              <li><a routerLink="/">Home</a></li>
+              <li><a href="/service">Services</a></li>
+              <li class="last"><a href="/why-choose">Why Choose Capital Source</a></li>
+            </ul>
+          </ng-container>
+          <ng-container *ngSwitchCase="'/what-you-save'">
+            <h1>Services</h1>
+            <ul class="breadcrumbs">
+              <li class="home">You are here:</li>
+              <li><a routerLink="/">Home</a></li>
+              <li><a href="/service">Services</a></li>
+              <li class="last"><a href="/what-you-save">What You Save</a></li>
+            </ul>
+          </ng-container>
+          <ng-container *ngSwitchCase="'/about'">
+            <h1>About Us</h1>
+            <ul class="breadcrumbs">
+              <li class="home">You are here:</li>
+              <li><a routerLink="/">Home</a></li>
+              <li><a href="/about">About Us</a></li>
+            </ul>
+          </ng-container>
+          <ng-container *ngSwitchCase="'/our-company'">
+            <h1>About Us</h1>
+            <ul class="breadcrumbs">
+              <li class="home">You are here:</li>
+              <li><a routerLink="/">Home</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li class="last"><a href="/our-company">Our Company</a></li>
+            </ul>
+          </ng-container>
+          <ng-container *ngSwitchCase="'/core-values'">
+            <h1>About Us</h1>
+            <ul class="breadcrumbs">
+              <li class="home">You are here:</li>
+              <li><a routerLink="/">Home</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li class="last"><a href="/core-values">Core Values and Philosophy</a></li>
+            </ul>
+          </ng-container>
+          <ng-container *ngSwitchCase="'/job-seeker'">
+            <h1>Job Seekers</h1>
+            <ul class="breadcrumbs">
+              <li class="home">You are here:</li>
+              <li><a routerLink="/">Home</a></li>
+              <li><a href="/job-seeker">Job Seekers</a></li>
+            </ul>
+          </ng-container>
+          <ng-container *ngSwitchCase="'/apply-now'">
+            <h1>Job Seekers</h1>
+            <ul class="breadcrumbs">
+              <li class="home">You are here:</li>
+              <li><a routerLink="/">Home</a></li>
+              <li><a href="/job-seeker">Job Seekers</a></li>
+              <li class="last"><a href="/apply-now">Apply Now</a></li>
+            </ul>
+          </ng-container>
+          <ng-container *ngSwitchCase="'/jobs-pink'">
+            <h1>Job Seekers</h1>
+            <ul class="breadcrumbs">
+              <li class="home">You are here:</li>
+              <li><a routerLink="/">Home</a></li>
+              <li><a href="/job-seeker">Job Seekers</a></li>
+              <li class="last"><a href="/jobs-pink">Jobs Pink</a></li>
+            </ul>
+          </ng-container>
+          <ng-container *ngSwitchCase="'/contact'">
+            <h1>Contact Us</h1>
+            <ul class="breadcrumbs">
+              <li class="home">You are here:</li>
+              <li><a routerLink="/">Home</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </ng-container>
+        </div>
       </section>
       <!-- Slider -->
-      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
-        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
-        (beforeChange)="beforeChange($event)">
+      <ngx-slick-carousel *ngIf="router.url.indexOf('home') > -1" class="carousel" #slickModal="slick-carousel"
+        [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)"
+        (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
           <img src="{{ slide.img }}" alt="" width="100%">
         </div>
