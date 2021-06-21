@@ -1,78 +1,84 @@
-<div class="employee-wrapper">
+<div id="employee-detail" class="employee-wrapper">
   <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Name</label>
-        <label class="style">{{currentEmployee?.name}}</label>
+    <div class=" d-flex">
+      <div class="row">
+        <img class="employee-image" [src]="currentEmployee?.picture">
       </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Email</label>
-        <label class="style">{{currentEmployee?.email}}</label>
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Phone Number</label>
-        <label class="style">{{currentEmployee?.phone}}</label>
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Cell Number</label>
-        <label class="style">{{currentEmployee?.cell}}</label>
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Date of birth</label>
-        <label class="style">{{currentEmployee?.birthDate}}</label>
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Gender</label>
-        <label class="style">{{currentEmployee?.gender}}</label>
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Address</label>
-        <label class="style">{{currentEmployee?.address}}</label>
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Major Intersection</label>
-        <label class="style">{{currentEmployee?.intersection}}</label>
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Province</label>
-        <label class="style">{{currentEmployee?.province}}</label>
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>City</label>
-        <label class="style">{{currentEmployee?.city}}</label>
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Postal Code</label>
-        <label class="style">{{currentEmployee?.postalCode}}</label>
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Access to Vehicle</label>
-        <label class="style">{{currentEmployee?.vehicleAccess}}</label>
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Job Category</label>
-        <label class="style"> {{currentEmployee?.jobCategory}}</label>
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Job Type</label>
-        <label class="style">{{currentEmployee?.jobType}}</label>
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Job Shift</label>
-        <label class="style">{{currentEmployee?.jobShift}}</label>
-      </div>
-      <div class="col-md-4 col-lg-3 col-xl-2 form-group">
-        <label>Additional Information</label>
-        <label class="style">{{currentEmployee?.additionalInfo}}</label>
+      <div class="row">
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Name</label>
+          <label class="style">{{currentEmployee?.name}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Email</label>
+          <label class="style">{{currentEmployee?.email}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Phone Number</label>
+          <label class="style">{{currentEmployee?.phone}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Cell Number</label>
+          <label class="style">{{currentEmployee?.cell}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Date of birth</label>
+          <label class="style">{{currentEmployee?.birthDate}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Gender</label>
+          <label class="style">{{currentEmployee?.gender}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Address</label>
+          <label class="style">{{currentEmployee?.address}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Major Intersection</label>
+          <label class="style">{{currentEmployee?.intersection}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Province</label>
+          <label class="style">{{currentEmployee?.province}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>City</label>
+          <label class="style">{{currentEmployee?.city}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Postal Code</label>
+          <label class="style">{{currentEmployee?.postalCode}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Access to Vehicle</label>
+          <label class="style">{{currentEmployee?.vehicleAccess}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Job Category</label>
+          <label class="style"> {{currentEmployee?.jobCategory}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Job Type</label>
+          <label class="style">{{currentEmployee?.jobType}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Job Shift</label>
+          <label class="style">{{currentEmployee?.jobShift}}</label>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 form-group">
+          <label>Additional Information</label>
+          <label class="style">{{currentEmployee?.additionalInfo}}</label>
+        </div>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-12 pull-right">
         <div class="pull-right">
-          <input (click) = "onBack()" type="submit" value="Go Back" class="btn btn-primary" />
+          <input (click)="onBack()" type="submit" value="Go Back" class="btn btn-primary" />
+          <input (click)="downloadPdf()" type="submit" value="Download Pdf" class="btn btn-primary" />
         </div>
       </div>
     </div>
   </div>
 </div>
-

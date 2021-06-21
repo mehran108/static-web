@@ -5,16 +5,16 @@
         <h3>Employers</h3>
         <p><img src="assets/uploads/2012/07/inco1.png" alt="Easy to customize" />
            We provide qualified manpower by directing our focus to our client&#8217;s company. Boost productivity by
-          hiring and retaining great people from Capital Source. <a class="button button-small button-small-gray"
-            href="services/index.html" target=""><span>Learn more</span></a>
+          hiring and retaining great people from Pinnacle. <a class="button button-small button-small-gray"
+            [routerLink]="['/service']" routerLinkActive="router-link-active" target=""><span>Learn more</span></a>
       </div>
     </div>
     <div class=" col-md-6 col-lg-4 margin-bottom">
       <div class="homepage-box">
         <h3>Job Seekers</h3>
         <p><img src="assets/uploads/2012/07/2inco.png" alt="Documentation" />
-           At Capital Source, we treat our job seekers as clients as we continue to place great people like you in
-          great jobs at no cost to you. <a class="button button-small button-small-gray" href="job-seekers/index.html"
+           At Pinnacle, we treat our job seekers as clients as we continue to place great people like you in
+          great jobs at no cost to you. <a class="button button-small button-small-gray" [routerLink]="['/job-seeker']"
             target=""><span>Learn More</span></a>
       </div>
     </div>
@@ -24,7 +24,7 @@
         <p><img src="assets/uploads/2012/07/3inco.png" alt="Browser compatible" />
            Our team of professional recruiters are zealous and hard working as we emphasize the need for strong
           client relationship and corporate advancement.<a class="button button-small button-small-gray"
-            href="about-us/index.html" target=""><span>Learn more</span></a>
+            [routerLink]="['/about']" target=""><span>Learn more</span></a>
       </div>
     </div>
   </div>
@@ -32,10 +32,10 @@
   <div class="row Call-to-action">
     <div class="col-md-8 inside">
       <h4>Are you interested in our services? Do you have any questions?</h4>
-      <h5> Find out how Capital Source is the best source for your recruitment solutions.</h5>
+      <h5> Find out how Pinnacle is the best source for your recruitment solutions.</h5>
     </div>
     <div class=" col-md-4ba">
-      <a class="call_to_action  call_to_action_contact" href="contact-us/index.html"><span>Get in touch with
+      <a class="call_to_action  call_to_action_contact" [routerLink]="['/contact']"><span>Get in touch with
           us</span></a>
     </div>
   </div>
@@ -50,26 +50,26 @@
   </div>
   <div class="row" id="homepage-features">
     <div class="col-12">
-      <h3>Why choose Capital Source?</h3>
-    <h5>Take advantage of our expertise to increase HR efficiency and productivity.</h5>
+      <h3>Why choose Pinnacle?</h3>
+      <h5>Take advantage of our expertise to increase HR efficiency and productivity.</h5>
     </div>
     <ul class="row">
       <li class="col-md-4 col-lg-3 margin-bottom"><img src="assets/uploads/2012/07/4icon.png" alt="" />
         <div class="ins">
           <h5>Professional Team</h5> Our team of professionals are dedicated to fulfil your companies
-          recruitment needs. <a href="about-us/our-company/index.html">Read more</a>
+          recruitment needs. <a [routerLink]="['/our-company']">Read more</a>
         </div>
       </li>
       <li class="col-md-4 col-lg-3 margin-bottom"><img src="assets/uploads/2012/07/1icon.png" alt="" />
         <div class="ins">
-          <h5>Result-oriented Focus</h5> At Capital Source, we are driven by commitment to goal achievement,
-          executed by careful planning.<a href="services/why-choose-capital-source/index.html">Read more</a>
+          <h5>Result-oriented Focus</h5> At Pinnacle, we are driven by commitment to goal achievement,
+          executed by careful planning.<a [routerLink]="['/why-choose']">Read more</a>
         </div>
       </li>
       <li class="col-md-4 col-lg-3 margin-bottom"><img src="assets/uploads/2012/07/2icon.png" alt="" />
         <div class="ins">
           <h5>Excellent Hiring Process</h5> Our tailored orientation and interviewing process is designed to
-          deliver the best placement, every time. <a href="services/candidate-selection/index.html">Read
+          deliver the best placement, every time. <a [routerLink]="['/candidate-selection']">Read
             more</a>
         </div>
       </li>
@@ -77,13 +77,13 @@
         <div class="ins">
           <h5>Zealous and Honest Business Ethics</h5> Our business model is built around long-term client
           relationship. We focus on a relationship of trust and diligent work ethics. <a
-            href="about-us/core-values-and-philosophy/index.html">Read more</a>
+            [routerLink]="['/core-values']">Read more</a>
         </div>
       </li>
-    </ul> 
-    <a class="help margin-bottom" href="contact-us/index.html">Do you have any questions? Please, contact us.</a> <a
-      class="button button-small button-small-gray rs" href="job-seekers/index.html"><span>Job Seekers Click
+    </ul>
+    <a class="help margin-bottom" [routerLink]="['/contact']">Do you have any questions? Please, contact us.</a> <a
+      class="button button-small button-small-gray rs" [routerLink]="['/job-seeker']"><span>Job Seekers Click
         Here</span></a>
   </div>
 </div>
-<app-footer></app-footer>
+

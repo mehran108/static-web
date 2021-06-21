@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FirebaseService } from 'src/components/common/firebase.service';
+import { downloadPdfReport } from 'src/components/common/functions';
 
 @Component({
   selector: 'app-employee-detail',
@@ -33,5 +34,8 @@ export class EmployeeDetailComponent implements OnInit {
   }
   onBack() {
     this.router.navigate(['/admin/employee-list'])
+  }
+  downloadPdf() {
+    downloadPdfReport('employee-detail', this.currentEmployee.name)
   }
 }

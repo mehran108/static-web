@@ -16,7 +16,7 @@
         </div>
         <div class="col-md-9">
           <div class="info">Below is an application to apply for a job. Whenever we have an opening, we will contact
-            you. If you have any questions please <a title="Contact" href="../../contact-us/index.html">contact us</a>.
+            you. If you have any questions please <a title="Contact" routerLink="/contact">contact us</a>.
           </div>
           <form [formGroup]="fg" class="row wpcf7-form init">
             <div class="form-group col-md-6">
@@ -271,7 +271,8 @@
             <div class="col-12 form-group">
               <p class="margin">Submit Your Resume here. Max. 5 MB</p>
               <span class="wpcf7-form-control-wrap SubmitResumes">
-                <input type="file" name="SubmitResumes" size="40" class="wpcf7-form-control wpcf7-file"
+                <input type="file" (change)="uploadFile($event)" name="SubmitResumes" size="40"
+                  class="wpcf7-form-control wpcf7-file"
                   accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv"
                   aria-invalid="false" />
               </span>
@@ -299,4 +300,4 @@
 
   </div>
 </div>
-<app-footer></app-footer>
+Pinnacle

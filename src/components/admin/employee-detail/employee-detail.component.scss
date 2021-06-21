@@ -1,11 +1,10 @@
 .employee-wrapper {
-  background: #09234e url("../../../assets/pinnacle-images/header_bg.png") no-repeat center top;
+  background: #fff;
   height: 100vh;
   padding-top: 50px;
-
   .form-group {
     label {
-      color: #fff;
+      color: black;
 
       &.style {
         border-top: 1px solid #b2b2b2;
@@ -24,9 +23,16 @@
       }
     }
   }
-  .btn{
+
+  .btn {
     color: #fff;
     text-shadow: 1px 1px 0 #162e4d;
     border: 1px solid #13325c;
   }
+}
+
+.employee-image {
+  height: 200px;
+  width: 200px;
+  margin-right: 20px;
 }

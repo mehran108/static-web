@@ -2,8 +2,8 @@
   <div class="header_overlay">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
-        <a id="logo" class="navbar-brand" href="index.html">
-          <!-- <img src="assets/logo.jpg" alt="Capital Source Corporation" /> -->
+        <a id="logo" class="navbar-brand" [routerLink]="['/home']">
+          <img style="width: 525px;" src="assets/logo_3.png" alt="Pinnacle Corporation" />
         </a>
         <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -11,19 +11,19 @@
           <span></span>
           <span></span>
           <span></span>
-        </button>
+        </button>&
 
         <div class="collapse navbar-collapse" [style.display]="isCollapsed ? 'block': 'none'"
           id="navbarSupportedContent">
           <div class="top">
             <div class="top_options">
               <!-- Call us -->
-              <div class="call_us">
-                <span>(416) </span>645-1667
+              <div style="width: 250px;" class="call_us">
+                <span>(905) </span>564-5419
               </div>
             </div>
             <!-- Navigation -->
-            <nav id="navigation">
+           <nav id="navigation">
               <ul>
                 <li class="page_item page-item-14 current_page_item"><a routerLink="/" aria-current="page">Home</a></li>
                 <li class="page_item page-item-58 page_item_has_children"><a routerLink="/service"
@@ -35,7 +35,7 @@
                     <li class="page_item page-item-65"><a routerLink="/why-choose"
                         routerLinkActive="router-link-active">Why
                         Choose
-                        Capital Source</a></li>
+                        Pinnacle</a></li>
                     <li class="page_item page-item-67"><a routerLink="/what-you-save"
                         routerLinkActive="router-link-active">What You Save</a></li>
                   </ul>
@@ -75,7 +75,7 @@
             <ul class="breadcrumbs">
               <li class="home">You are here:</li>
               <li><a routerLink="/">Home</a></li>
-              <li class="last"><a href="/service">Services</a></li>
+              <li class="last"><a routerLink="/service">Services</a></li>
             </ul>
           </ng-container>
           <ng-container *ngSwitchCase="'/candidate-selection'">
@@ -83,8 +83,8 @@
             <ul class="breadcrumbs">
               <li class="home">You are here:</li>
               <li><a routerLink="/">Home</a></li>
-              <li><a href="/service">Services</a></li>
-              <li class="last"><a href="/candidate-selection">Candidate Selection</a></li>
+              <li><a routerLink="/service">Services</a></li>
+              <li class="last"><a routerLink="/candidate-selection">Candidate Selection</a></li>
             </ul>
           </ng-container>
           <ng-container *ngSwitchCase="'/why-choose'">
@@ -92,8 +92,8 @@
             <ul class="breadcrumbs">
               <li class="home">You are here:</li>
               <li><a routerLink="/">Home</a></li>
-              <li><a href="/service">Services</a></li>
-              <li class="last"><a href="/why-choose">Why Choose Capital Source</a></li>
+              <li><a routerLink="/service">Services</a></li>
+              <li class="last"><a routerLink="/why-choose">Why Choose Pinnacle</a></li>
             </ul>
           </ng-container>
           <ng-container *ngSwitchCase="'/what-you-save'">
@@ -101,8 +101,8 @@
             <ul class="breadcrumbs">
               <li class="home">You are here:</li>
               <li><a routerLink="/">Home</a></li>
-              <li><a href="/service">Services</a></li>
-              <li class="last"><a href="/what-you-save">What You Save</a></li>
+              <li><a routerLink="/service">Services</a></li>
+              <li class="last"><a routerLink="/what-you-save">What You Save</a></li>
             </ul>
           </ng-container>
           <ng-container *ngSwitchCase="'/about'">
@@ -110,7 +110,7 @@
             <ul class="breadcrumbs">
               <li class="home">You are here:</li>
               <li><a routerLink="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
+              <li><a routerLink="/about">About Us</a></li>
             </ul>
           </ng-container>
           <ng-container *ngSwitchCase="'/our-company'">
@@ -118,8 +118,8 @@
             <ul class="breadcrumbs">
               <li class="home">You are here:</li>
               <li><a routerLink="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li class="last"><a href="/our-company">Our Company</a></li>
+              <li><a routerLink="/about">About Us</a></li>
+              <li class="last"><a routerLink="/our-company">Our Company</a></li>
             </ul>
           </ng-container>
           <ng-container *ngSwitchCase="'/core-values'">
@@ -127,8 +127,8 @@
             <ul class="breadcrumbs">
               <li class="home">You are here:</li>
               <li><a routerLink="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li class="last"><a href="/core-values">Core Values and Philosophy</a></li>
+              <li><a routerLink="/about">About Us</a></li>
+              <li class="last"><a routerLink="/core-values">Core Values and Philosophy</a></li>
             </ul>
           </ng-container>
           <ng-container *ngSwitchCase="'/job-seeker'">
@@ -136,7 +136,7 @@
             <ul class="breadcrumbs">
               <li class="home">You are here:</li>
               <li><a routerLink="/">Home</a></li>
-              <li><a href="/job-seeker">Job Seekers</a></li>
+              <li><a routerLink="/job-seeker">Job Seekers</a></li>
             </ul>
           </ng-container>
           <ng-container *ngSwitchCase="'/apply-now'">
@@ -144,8 +144,8 @@
             <ul class="breadcrumbs">
               <li class="home">You are here:</li>
               <li><a routerLink="/">Home</a></li>
-              <li><a href="/job-seeker">Job Seekers</a></li>
-              <li class="last"><a href="/apply-now">Apply Now</a></li>
+              <li><a routerLink="/job-seeker">Job Seekers</a></li>
+              <li class="last"><a routerLink="/apply-now">Apply Now</a></li>
             </ul>
           </ng-container>
           <ng-container *ngSwitchCase="'/jobs-pink'">
@@ -153,8 +153,8 @@
             <ul class="breadcrumbs">
               <li class="home">You are here:</li>
               <li><a routerLink="/">Home</a></li>
-              <li><a href="/job-seeker">Job Seekers</a></li>
-              <li class="last"><a href="/jobs-pink">Jobs Pink</a></li>
+              <li><a routerLink="/job-seeker">Job Seekers</a></li>
+              <li class="last"><a routerLink="/jobs-pink">Jobs Pink</a></li>
             </ul>
           </ng-container>
           <ng-container *ngSwitchCase="'/contact'">
@@ -162,7 +162,7 @@
             <ul class="breadcrumbs">
               <li class="home">You are here:</li>
               <li><a routerLink="/">Home</a></li>
-              <li><a href="/contact">Contact Us</a></li>
+              <li><a routerLink="/contact">Contact Us</a></li>
             </ul>
           </ng-container>
         </div>
@@ -171,16 +171,16 @@
       <ngx-slick-carousel *ngIf="router.url.indexOf('home') > -1" class="carousel" #slickModal="slick-carousel"
         [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)"
         (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <div ngxSlickItem *ngFor="let slide of slides;let i=index" class="slide">
           <div class="slider-wrapper">
             <div class="slide-info">
               <h2>Only <span>The Best</span></h2>
-              <p>Capital Source manages to provide only the best; from top quality candidates to exceptional service.
-                Why settle for less? Learn how Capital Source can help your business with professional solutions at
+              <p>Pinnacle manages to provide only the best; from top quality candidates to exceptional service.
+                Why settle for less? Learn how Pinnacle can help your business with professional solutions at
                 competitive rates, call us today.</p>
               <a href="#" class="button-big button-big-orange"><span>Learn More</span></a>
             </div>
-            <img src="{{ slide.img }}" alt="" class="img-fluid">
+            <img width="350" height="150" src="{{ slide.img }}" alt="" class="img-fluid">
           </div>
         </div>
       </ngx-slick-carousel>
@@ -208,7 +208,7 @@
 
             <div class="desc">
               <div style="width:400px; top:170px; left: 550px; position:absolute; z-index:4;">
-                <p>Capital Source continues to enhance and fulfill Human Capital requirements in the ever-changing
+                <p>Pinnacle continues to enhance and fulfill Human Capital requirements in the ever-changing
                   market. Our comprehensive recruitment structure hand-picks the most qualified fit to fill the job;
                   making sure you have only the best working for you.</p>
                 <a href="contact-us/index.html" class="button-big button-big-orange"><span>Contact Us</span></a>
@@ -241,8 +241,8 @@
 
             <div class="desc">
               <div style="width:400px; top:170px; left: 550px; position:absolute; z-index:4;">
-                <p>Capital Source manages to provide only the best; from top quality candidates to exceptional service.
-                  Why settle for less? Learn how Capital Source can help your business with professional solutions at
+                <p>Pinnacle manages to provide only the best; from top quality candidates to exceptional service.
+                  Why settle for less? Learn how Pinnacle can help your business with professional solutions at
                   competitive rates, call us today.</p>
               </div>
             </div>
@@ -274,7 +274,7 @@
             <div class="desc">
               <div style="width:400px; top:170px; left: 550px; position:absolute; z-index:4;">
                 <p>The extensive range of job opportunities available allows placement that fits your lifestyle. Whether
-                  it&#8217;s be short or long term commitment, Capital Source&#8217;s convenient online application
+                  it&#8217;s be short or long term commitment, Pinnacle&#8217;s convenient online application
                   process can help you secure a job faster. </p>
               </div>
             </div>
@@ -305,7 +305,7 @@
 
             <div class="desc">
               <div style="width:400px; top:170px; left: 550px; position:absolute; z-index:4;">
-                <p>Capital Source strives to envision and deliver the promise of success through unique strategies and
+                <p>Pinnacle strives to envision and deliver the promise of success through unique strategies and
                   innovative concepts. We remain focused and committed to procuring capital success by a unified effort
                   of people; turning potential into tangible benefits for our clientele.</p>
               </div>
