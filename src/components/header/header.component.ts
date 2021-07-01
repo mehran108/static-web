@@ -76,10 +76,10 @@ export class HeaderComponent implements OnInit {
     }, 100);
   }
   slides = [
-    {img: "assets/pinnacle-images/bg2.jpg"},
-    {img: "assets/pinnacle-images/bg1.jpg"},
-    {img: "assets/pinnacle-images/bg3.jpg"},
-    {img: "assets/pinnacle-images/bg4.jpg"}
+    {img: "assets/pinnacle-images/bg2.png"},
+    {img: "assets/pinnacle-images/bg1.png"},
+    {img: "assets/pinnacle-images/bg3.png"},
+    // {img: "assets/pinnacle-images/bg4.png"}
   ];
   slideConfig = {"slidesToShow": 1, "slidesToScroll": 1, arrows: false, autoplay: true};
 
