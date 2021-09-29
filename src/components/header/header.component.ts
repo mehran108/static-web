@@ -89,7 +89,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   }
 
   checkIfToShow() {
-    return ["/alraziq", "/project"].includes(this.router.url);
+    return ["/alraziq", "/project", "/supreme-city"].includes(this.router.url);
   }
   hideMenuHeader = () => {
     $(".wrapper").fadeOut("slow");
