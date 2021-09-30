@@ -26,6 +26,14 @@ public phoneList:any;
       this.phoneList.push({num: '0309-2001000'});
       this.phoneList.push({num: '0309-3008000'});
     }
+    if (this.router.url === "/supreme-city") {
+      
+      this.address = "Main GT Road Bank Stop, Opp Bata Factory Manawan, Lahore, Pakistan";
+      this.phoneList = [];
+      this.phoneList.push({num: '042-365811-23'});
+      this.phoneList.push({num: '042-365811-24'});
+      this.phoneList.push({num: '042-365811-25'});
+    }
   }
 
 }
