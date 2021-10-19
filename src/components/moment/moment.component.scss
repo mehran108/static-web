@@ -1,0 +1,12 @@
+.moment-wrapper{
+    padding-top: 100px;
+    h1{
+        font-weight: 700;
+        font-size: 60px;
+        text-align: center;
+        margin: 0 0 30px;
+        @media (min-width: 768px){
+            font-size: 80px;
+        }
+    }
+}

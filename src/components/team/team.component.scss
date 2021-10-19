@@ -1,0 +1,26 @@
+.img-wrapper {
+  position: relative;
+
+  h1 {
+    position: absolute;
+
+    bottom: -27px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+
+    @media (min-width: 768px) {
+      bottom: 8px;
+      font-size: 26px;
+    }
+    @media (min-width: 992px){
+        font-size: 34px;
+    }
+    @media (min-width: 1200px){
+        font-size: 40px;
+    }
+  }
+}

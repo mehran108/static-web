@@ -1,0 +1,40 @@
+.goals-wrapper{
+    padding-top: 100px;
+    .goals-intro{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @media (min-width: 992px){
+            padding-bottom: 0;
+        }
+        h2{
+            font-size: 27px;
+            color: #73b91d;
+            padding-bottom: 20px;
+        }
+        p{
+            border-bottom: 1px solid #595959;
+            border-top: 1px solid #595959;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            font-size: 20px;
+            color: #595959;
+            font-weight: 700;
+            font-style: italic;
+        }
+    }
+    .goals-details{
+        padding-bottom: 20px;
+        h3{
+            padding-bottom: 5px;
+            font-weight: 700;
+            color: #73b91d;
+        }
+        p{
+            color: #595959;
+            font-weight: 700;
+            font-style: italic;
+            font-size: 20px;
+            padding-right: 100px;
+        }
+    }
+}

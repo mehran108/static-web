@@ -1,0 +1,43 @@
+.mission-intro {
+  text-align: center;
+  padding-bottom: 50px;
+
+  &:first-child {
+      border-right: 3px solid #73b91d;
+      border-bottom: 3px solid #73b91d;
+    p {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  &:last-child {
+      padding-top: 50px;
+    border-left: 3px solid #73b91d;
+    p {
+      max-width: 350px;
+      margin: 0 auto;
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+    color: #73b91d;
+    font-size: 60px;
+    padding-bottom: 10px;
+
+  }
+
+  p {
+    font-weight: 700;
+    font-style: italic;
+    color: #595959;
+    font-size: 20px;
+
+  }
+}
+
+
+.mission-wrapper {
+  padding-top: 100px;
+}

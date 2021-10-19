@@ -1,0 +1,13 @@
+.clients-wrapper{
+    padding-top: 100px;
+    h1{
+        color: #73b91d;
+    padding-bottom: 50px;
+    }
+    img{
+        padding-bottom: 40px;
+        @media (min-width: 768px){
+            padding-bottom: 0;
+        }
+    }
+}

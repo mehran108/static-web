@@ -1,0 +1,45 @@
+.about-wrapper {
+  padding-top: 80px;
+
+  .about-intro {
+    position: relative;
+    padding-top: 40px;
+    padding-right: 40px;
+    margin-top: 60px;
+    @media (min-width: 768px){
+        margin-top: 0;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: #72b91b;
+    }
+
+    &:before {
+      height: 5px;
+      width: 340px;
+    }
+
+    &:after {
+        height: 220px;
+        width: 5px;
+    }
+
+    h4 {
+      color: #141414;
+      font-size: 18px;
+      line-height: 22px;
+      font-style: italic;
+    }
+  }
+  .about-bg{
+    padding-top: 40px;
+      img{
+          width: 100%;
+      }
+  }
+}
