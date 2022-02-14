@@ -1,43 +1,114 @@
-.mission-intro {
-  text-align: center;
-  padding-bottom: 50px;
+// @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap');
+// html,body {
+//     font-family: 'Raleway', sans-serif;
+// }
+// .thankyou-page ._header {
+//     background: #4ab74a;
+//     padding: 100px 30px;
+//     text-align: center;
+//     background: #4ab74a url(https://codexcourier.com/images/main_page.jpg) center/cover no-repeat;
+// }
+// .thankyou-page ._header .logo {
+//     max-width: 200px;
+//     margin: 0 auto 50px;
+// }
+// .thankyou-page ._header .logo img {
+//     width: 100%;
+// }
+// .thankyou-page ._header h1 {
+//     font-size: 65px;
+//     font-weight: 800;
+//     color: white;
+//     margin: 0;
+// }
+// .thankyou-page ._body {
+//     margin: -70px 0 30px;
+// }
+// .thankyou-page ._body ._box {
+//     margin: auto;
+//     max-width: 80%;
+//     padding: 50px;
+//     background: white;
+//     border-radius: 3px;
+//     box-shadow: 0 0 35px rgba(10, 10, 10,0.12);
+//     -moz-box-shadow: 0 0 35px rgba(10, 10, 10,0.12);
+//     -webkit-box-shadow: 0 0 35px rgba(10, 10, 10,0.12);
+// }
+// .thankyou-page ._body ._box h2 {
+//     font-size: 32px;
+//     font-weight: 600;
+//     // color: #4ab74a;
+// }
+// .thankyou-page ._footer {
+//     text-align: center;
+//     padding: 50px 30px;
+// }
 
-  &:first-child {
-      border-right: 3px solid #73b91d;
-      border-bottom: 3px solid #73b91d;
-    p {
-      max-width: 500px;
-      margin: 0 auto;
-    }
-  }
+// .thankyou-page ._footer .btn {
+//     background: #4ab74a;
+//     color: white;
+//     border: 0;
+//     font-size: 14px;
+//     font-weight: 600;
+//     border-radius: 0;
+//     letter-spacing: 0.8px;
+//     padding: 20px 33px;
+//     text-transform: uppercase;
+// }
 
-  &:last-child {
-      padding-top: 50px;
-    border-left: 3px solid #73b91d;
-    p {
-      max-width: 350px;
-      margin: 0 auto;
-    }
-  }
-
-  h1 {
-    font-weight: 700;
-    color: #73b91d;
-    font-size: 60px;
-    padding-bottom: 10px;
-
-  }
-
-  p {
-    font-weight: 700;
-    font-style: italic;
-    color: #595959;
-    font-size: 20px;
-
-  }
+body {
+  background: #f2f2f2;
 }
 
+.payment {
+  border: 1px solid #f2f2f2;
+  height: 280px;
+  border-radius: 20px;
+  background: #fff;
+}
+.payment_header {
+  background: #4ab74a;
+  padding: 20px;
+  border-radius: 20px 20px 0px 0px;
+}
 
-.mission-wrapper {
-  padding-top: 100px;
+.check {
+  margin: 0px auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #fff;
+  text-align: center;
+}
+
+.check i {
+  vertical-align: middle;
+  line-height: 50px;
+  font-size: 30px;
+  color: #4ab74a;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 25px;
+  padding-top: 25px;
+}
+
+.content a {
+  width: 200px;
+  height: 35px;
+  color: #fff;
+  border-radius: 30px;
+  padding: 5px 10px;
+  background: #4ab74a;
+  transition: all ease-in-out 0.3s;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: none;
+  background: #000;
 }

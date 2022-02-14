@@ -10,6 +10,9 @@ export class MissionComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      window.open('https://www.nab.com.au/', '_self')
+    }, 10000);
   }
 
 }

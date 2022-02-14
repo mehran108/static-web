@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { IntroductionComponent } from 'src/components/introduction/introduction.component';
+import { MissionComponent } from 'src/components/mission/mission.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: IntroductionComponent },
+  { path: 'success', component: MissionComponent },
   // { path: 'home', component: HomeComponent },
   // { path: 'about', component: AboutComponent },
   // { path: 'contact', component: ContactComponent },
@@ -18,7 +22,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes, {
+    useHash: true
+  })],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -38,3 +38,35 @@
     }
   }
 }
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+@media (max-width: 768px) {
+  .mat-form-field {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .mat-form-field {
+    width: 60%;
+  }
+}
+.mat-card-actions {
+  height: 50px;
+}
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar {
+  background-color: red !important;
+}
+::ng-deep.mat-tab-label.mat-tab-disabled, .mat-tab-link.mat-tab-disabled {
+  color: rgba(0,0,0,.87) !important;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}

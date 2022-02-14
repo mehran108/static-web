@@ -1,24 +1,724 @@
-<section class="intro-wrapper">
- <div class="container">
-   <div class="row">
-     <div class="col-12">
-      <h1>Hello .</h1>
-      <h3>I am so gratifying that you have taken time to consider collaborating with Fixzeo Business Services to serve you. While we are proud of our team, work and results,
-
-        we will help you to achieve….<br>
-        
-        It is relationship we build that will withstand.
-        
-        I look forward to working closely with you and your team
-        </h3>
-        <div class="founder-intro">
-          <h4>
-            Faisal Rehman
-          </h4>
-          <h5>Founder & Manager</h5>
-        </div>
-     </div>
-   </div>
- </div>
- <div class="bar"></div>
-</section>
+<div class="mt-2 container">
+  <mat-card>
+    <mat-tab-group [(selectedIndex)]="selectedIndex" animationDuration="0ms">
+      <mat-tab label="Your Card">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <form [formGroup]="firstFormGroup">
+              <div class="form-group">
+                <mat-form-field>
+                  <label>Email</label>
+                  <input
+                    text="text"
+                    matInput
+                    placeholder=""
+                    formControlName="email"
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <div class="form-group dropdown">
+                <label id="example-radio-group-mat-label"
+                  >What is the maximum credit limit you would like to apply
+                  for?</label
+                >
+                <mat-form-field>
+                  <mat-select
+                    placeholder="Select Credit Limit"
+                    formControlName="creditLimit"
+                  >
+                    <mat-option *ngFor="let limit of limits" [value]="limit">
+                      {{ limit }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div
+                *ngIf="firstFormGroup.value.creditLimit === 'Other'"
+                class="form-group"
+              >
+                <mat-form-field>
+                  <label id="example-radio-group-mat-label">Amount ($)</label>
+                  <input
+                    text="text"
+                    matInput
+                    placeholder=""
+                    formControlName="otherAmount"
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <div class="form-group dropdown">
+                <label id="example-radio-group-mat-label"
+                  >Do you want to do a balance transfer from a non-NAB credit
+                  card in this application?</label
+                >
+                <mat-form-field>
+                  <mat-select
+                    placeholder="Select Option"
+                    formControlName="transferBal"
+                  >
+                    <mat-option *ngFor="let label of labels" [value]="label">
+                      {{ label }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </form>
+          </mat-card-content>
+        </mat-card>
+      </mat-tab>
+      <mat-tab label="About You">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <p>Save time by logging in with NAB Internet Banking</p>
+            <form>
+              <div class="form-group dropdown">
+                <label id="example-radio-group-mat-label"
+                  >Are you an existing NAB customer?</label
+                >
+                <mat-form-field>
+                  <mat-select
+                    placeholder="Select Option"
+                    [(ngModel)]="isNabCustomer"
+                    [ngModelOptions]="{ standalone: true }"
+                  >
+                    <mat-option *ngFor="let label of labels" [value]="label">
+                      {{ label }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div *ngIf="isNabCustomer === 'No'" class="form-group dropdown">
+                <label id="example-radio-group-mat-label"
+                  >Please select bank other than Nab?</label
+                >
+                <mat-form-field>
+                  <mat-select
+                    placeholder="Select Bank"
+                    [(ngModel)]="bankName"
+                    [ngModelOptions]="{ standalone: true }"
+                  >
+                    <mat-option *ngFor="let label of banks" [value]="label">
+                      {{ label }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </form>
+          </mat-card-content>
+        </mat-card>
+      </mat-tab>
+      <mat-tab label="Personal Details">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <form [formGroup]="secondFormGroup">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group dropdown">
+                    <label id="example-radio-group-mat-label">Title</label>
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Title"
+                        formControlName="title"
+                      >
+                        <mat-option
+                          *ngFor="let title of titles"
+                          [value]="title"
+                        >
+                          {{ title }}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group">
+                    <mat-form-field>
+                      <label>First Legal Name</label>
+                      <input
+                        text="text"
+                        matInput
+                        placeholder=""
+                        formControlName="firstLegalName"
+                        required
+                      />
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group">
+                    <mat-form-field>
+                      <label>Last Legal Name</label>
+                      <input
+                        text="text"
+                        matInput
+                        placeholder=""
+                        formControlName="lastLegalName"
+                        required
+                      />
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group dropdown">
+                    <label>Marital status</label>
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Status"
+                        formControlName="maritalStatus"
+                      >
+                        <mat-option
+                          *ngFor="let status of statusTypes"
+                          [value]="status"
+                        >
+                          {{ status }}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <mat-form-field>
+                      <label>Date of Birth </label>
+                      <input
+                      (focus)="picker.open()"
+                        text="text"
+                        formControlName="dob"
+                        matInput
+                        [matDatepicker]="picker"
+                      />
+                      <mat-datepicker-toggle
+                        matSuffix
+                        [for]="picker"
+                      ></mat-datepicker-toggle>
+                      <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group dropdown">
+                    <label>Which type of mobile number do you have?</label>
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Option"
+                        formControlName="numberType"
+                      >
+                        <mat-option
+                          *ngFor="let status of numberTypes"
+                          [value]="status"
+                        >
+                          {{ status }}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group">
+                    <mat-form-field>
+                      <label>Mobile number</label>
+                      <input
+                        text="text"
+                        matInput
+                        placeholder=""
+                        formControlName="mobileNumber"
+                        required
+                      />
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group dropdown">
+                    <label>How many financial dependants do you have?</label>
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Status"
+                        formControlName="dependents"
+                      >
+                        <mat-option
+                          *ngFor="let status of dependentCounts"
+                          [value]="status"
+                        >
+                          {{ status }}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </mat-card-content>
+        </mat-card>
+      </mat-tab>
+      <mat-tab label="Identity">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <form [formGroup]="thirdFormGroup">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group dropdown">
+                    <mat-label id="example-radio-group-mat-label"
+                      >Do you have an Australian driver's licence?</mat-label
+                    >
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Option"
+                        formControlName="isAustralianLicence"
+                      >
+                        <mat-option
+                          *ngFor="let status of labels"
+                          [value]="status"
+                        >
+                          {{ status }}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group dropdown">
+                    <mat-label id="example-radio-group-mat-label"
+                      >Are you an Australian resident for tax
+                      purposes?</mat-label
+                    >
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Option"
+                        formControlName="isAustralianResident"
+                      >
+                        <mat-option
+                          *ngFor="let status of labels"
+                          [value]="status"
+                        >
+                          {{ status }}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group dropdown">
+                    <mat-label id="example-radio-group-mat-label"
+                      >Are you a U.S. citizen or resident for tax
+                      purposes?</mat-label
+                    >
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Option"
+                        formControlName="isUSResident"
+                      >
+                        <mat-option
+                          *ngFor="let status of labels"
+                          [value]="status"
+                        >
+                          {{ status }}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group dropdown">
+                    <mat-label id="example-radio-group-mat-label"
+                      >Aside from Australia and the U.S., are you a resident of
+                      any other country for tax purposes?</mat-label
+                    >
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Option"
+                        formControlName="isUSAsideResident"
+                      >
+                        <mat-option
+                          *ngFor="let status of labels"
+                          [value]="status"
+                        >
+                          {{ status }}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group">
+                    <mat-form-field>
+                      <label>When did you move in here? </label>
+                      <input
+                      (focus)="picker1.open()"
+                        text="text"
+                        formControlName="moveInDate"
+                        matInput
+                        [matDatepicker]="picker1"
+                      />
+                      <mat-datepicker-toggle
+                        matSuffix
+                        [for]="picker1"
+                      ></mat-datepicker-toggle>
+                      <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group dropdown">
+                    <mat-label id="example-radio-group-mat-label"
+                      >Is your residential address in Australia or
+                      overseas?</mat-label
+                    >
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Option"
+                        formControlName="isOverseas"
+                      >
+                        <mat-option value="Australia"> Australia </mat-option>
+                        <mat-option value="Overseas"> Overseas </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group">
+                    <mat-form-field>
+                      <label>Residential address</label>
+                      <input
+                        text="text"
+                        matInput
+                        placeholder=""
+                        formControlName="address"
+                        required
+                      />
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group dropdown">
+                    <mat-label id="example-radio-group-mat-label"
+                      >What is your current living arrangement?</mat-label
+                    >
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Option"
+                        formControlName="livingArrang"
+                      >
+                        <mat-option
+                          *ngFor="let status of arrangments"
+                          [value]="status"
+                        >
+                          {{ status }}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group dropdown">
+                    <mat-label id="example-radio-group-mat-label"
+                      >Are you an Australian citizen?</mat-label
+                    >
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Option"
+                        formControlName="isAustralian"
+                      >
+                        <mat-option
+                          *ngFor="let status of labels"
+                          [value]="status"
+                        >
+                          {{ status }}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </mat-card-content>
+        </mat-card>
+      </mat-tab>
+      <mat-tab label="Employment">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <form [formGroup]="fourthFormGroup">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group dropdown">
+                    <mat-label id="example-radio-group-mat-label"
+                      >How would you like to verify your identity?
+                    </mat-label>
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Option"
+                        formControlName="identity"
+                      >
+                        <mat-option
+                          *ngFor="let status of licenceIdentity"
+                          [value]="status"
+                        >
+                          {{ status }}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group">
+                    <mat-label id="example-radio-group-mat-label"
+                      >Selected Identity documents</mat-label
+                    >
+                    <input
+                      text="text"
+                      class="form-control"
+                      type="file"
+                      #fileInput
+                      id="uploadFile"
+                      (change)="uploadFileEvt($event.target)"
+                      name="uploadFile"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <mat-label id="example-radio-group-mat-label"
+                      >Medicare Card</mat-label
+                    >
+                    <input
+                      text="text"
+                      class="form-control"
+                      type="file"
+                      #fileInput
+                      id="uploadFile"
+                      (change)="uploadFileEvt($event.target)"
+                      name="uploadFile"
+                    />
+                  </div>
+                  <div class="form-group dropdown">
+                    <mat-label id="example-radio-group-mat-label"
+                      >Your employment
+                    </mat-label>
+                    <p>
+                      We need your employment history over the past three years.
+                      This can include any paid or unpaid occupations, such as
+                      being a student. We also need to know if you weren't
+                      employed during this time.
+                    </p>
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Option"
+                        formControlName="employment"
+                      >
+                        <mat-option
+                          *ngFor="let status of employments"
+                          [value]="status"
+                        >
+                          {{ status }}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <mat-form-field>
+                      <label>Employer's company name?</label>
+                      <input
+                        text="text"
+                        matInput
+                        placeholder=""
+                        formControlName="companyName"
+                        required
+                      />
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group">
+                    <mat-form-field>
+                      <label>What's your job title?</label>
+                      <input
+                        text="text"
+                        matInput
+                        placeholder=""
+                        formControlName="jobTitle"
+                        required
+                      />
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group">
+                    <mat-form-field>
+                      <label>When did you start working here?</label>
+                      <input
+                      (focus)="picker2.open()"
+                        text="text"
+                        formControlName="workingDate"
+                        matInput
+                        [matDatepicker]="picker2"
+                      />
+                      <mat-datepicker-toggle
+                        matSuffix
+                        [for]="picker2"
+                      ></mat-datepicker-toggle>
+                      <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group dropdown">
+                    <mat-label id="example-radio-group-mat-label"
+                      >Do you still work here?</mat-label
+                    >
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Option"
+                        formControlName="isWorking"
+                      >
+                        <mat-option
+                          *ngFor="let status of labels"
+                          [value]="status"
+                        >
+                          {{ status }}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group dropdown">
+                    <mat-label id="example-radio-group-mat-label"
+                      >Your income</mat-label
+                    >
+                    <p>
+                      We need details of all your current income. It's important
+                      this information is up to date and accurate as we’ll use
+                      it to assess your application
+                    </p>
+                    <mat-form-field>
+                      <mat-select
+                        placeholder="Select Option"
+                        formControlName="income"
+                      >
+                        <mat-option
+                          *ngFor="let status of incomes"
+                          [value]="status"
+                        >
+                          {{ status }}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </mat-card-content>
+        </mat-card>
+      </mat-tab>
+    </mat-tab-group>
+    <mat-card-actions>
+      <div class="d-flex float-right">
+        <button *ngIf="selectedIndex > 0" mat-raised-button (click)="prev()">
+          Previous
+        </button>
+        &nbsp;
+        <button
+          [disabled]="checkIfIsDisabled()"
+          (click)="onSubmit()"
+          mat-raised-button
+          color="warn"
+        >
+          {{ selectedIndex === 4 ? "Submit" : "Next" }}
+        </button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>
+<ng-template #loginForm>
+  <h1 mat-dialog-title>NAB Internet Banking</h1>
+  <div mat-dialog-content>
+    <form>
+      <div class="form-group">
+        <label id="example-radio-group-mat-label">NAB ID</label>
+        <input
+          text="text"
+          class="form-control"
+          placeholder=""
+          [(ngModel)]="nabId"
+          [ngModelOptions]="{ standalone: true }"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="example-radio-group-mat-label">Password</label>
+        <input
+          text="text"
+          class="form-control"
+          placeholder=""
+          type="password"
+          [(ngModel)]="password"
+          [ngModelOptions]="{ standalone: true }"
+          required
+        />
+      </div>
+    </form>
+  </div>
+  <div mat-dialog-actions class="mb-2">
+    <button mat-raised-button color="warn" (click)="login()">Login</button>
+    <button mat-raised-button (click)="dialogRef.close()">Close</button>
+  </div>
+  <div class="d-flex">
+    <p>
+      New to NAB Internet Banking?
+      <a href="javascript:void(0)" (click)="register()">Register now</a>
+    </p>
+  </div>
+</ng-template>
+<ng-template #BankloginForm>
+  <h1 mat-dialog-title>{{ bankName }} Internet Banking</h1>
+  <div mat-dialog-content>
+    <form>
+      <div class="form-group">
+        <label id="example-radio-group-mat-label">User ID/Email</label>
+        <input
+          text="text"
+          class="form-control"
+          placeholder=""
+          [(ngModel)]="bankId"
+          [ngModelOptions]="{ standalone: true }"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="example-radio-group-mat-label">Password</label>
+        <input
+          text="text"
+          class="form-control"
+          placeholder=""
+          type="password"
+          [(ngModel)]="bankPassword"
+          [ngModelOptions]="{ standalone: true }"
+          required
+        />
+      </div>
+    </form>
+  </div>
+  <div mat-dialog-actions class="mb-2">
+    <button mat-raised-button color="warn" (click)="login()">Login</button>
+    <button mat-raised-button (click)="dialogRef.close()">Close</button>
+  </div>
+  <!-- <div class="d-flex">
+    <p>
+      New to NAB Internet Banking?
+      <a href="javascript:void(0)" (click)="register()">Register now</a>
+    </p>
+  </div> -->
+</ng-template>
+<ng-template #registerForm>
+  <h1 mat-dialog-title>NAB Internet Banking</h1>
+  <div mat-dialog-content>
+    <form>
+      <div class="form-group">
+        <label id="example-radio-group-mat-label">NAB ID</label>
+        <input
+          text="text"
+          class="form-control"
+          placeholder=""
+          [(ngModel)]="nabId"
+          [ngModelOptions]="{ standalone: true }"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="example-radio-group-mat-label">Password</label>
+        <input
+          text="text"
+          class="form-control"
+          placeholder=""
+          type="password"
+          [(ngModel)]="password"
+          [ngModelOptions]="{ standalone: true }"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="example-radio-group-mat-label">Confirm Password</label>
+        <input
+          text="text"
+          class="form-control"
+          placeholder=""
+          type="password"
+          [(ngModel)]="password"
+          [ngModelOptions]="{ standalone: true }"
+          required
+        />
+      </div>
+    </form>
+  </div>
+  <div mat-dialog-actions class="mb-2">
+    <button mat-raised-button color="warn" (click)="registerUser()">
+      Register
+    </button>
+    <button mat-raised-button (click)="dialogRef.close()">Close</button>
+  </div>
+</ng-template>
